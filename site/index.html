@@ -1,0 +1,684 @@
+<title>Wristband</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Bay Area hackathons, demo days and founder events, and what it takes to get in. Re-crawled every 6 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Hanken+Grotesk:wght@400..700&family=Martian+Mono:wght@400..600&display=swap">
+<style>
+/* Layout: a day-by-day docket of event rows, each ending in a wristband that says how you get in.
+   Desktop: docket + right rail (deadlines, just happened, watchlist, sources). Phone: one column. */
+:root {
+  --bg: #eceef2;
+  --surface: #ffffff;
+  --surface-2: #f6f7f9;
+  --ink: #13151a;
+  --ink-2: #474d59;
+  --ink-3: #757c89;
+  --rule: #d8dbe1;
+  --accent: #2a3ed4;
+  --accent-soft: #e3e7ff;
+  --accent-ink: #ffffff;
+  --live: #e0342a;
+
+  --band-rsvp: #2fbf62;   --band-rsvp-ink: #052612;
+  --band-apply: #ff8b0f;  --band-apply-ink: #2a1500;
+  --band-ticket: #3f7cff; --band-ticket-ink: #ffffff;
+  --band-wait: #ff5aa8;   --band-wait-ink: #3a0020;
+  --band-closed: #c3c7cf; --band-closed-ink: #30343c;
+  --band-open: #22b8ad;   --band-open-ink: #032724;
+
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", system-ui, sans-serif;
+  --body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Martian Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --r: 10px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1014; --surface: #161920; --surface-2: #1c2028; --ink: #eceef3; --ink-2: #b4bac6; --ink-3: #7f8694; --rule: #2a2f39;
+    --accent: #93a1ff; --accent-soft: #232a4d; --accent-ink: #0e1014; --live: #ff6a5f;
+    --band-rsvp: #39c96c; --band-apply: #ff9a2e; --band-ticket: #5a8dff; --band-ticket-ink: #06122e; --band-wait: #ff6db2; --band-closed: #3c414b; --band-closed-ink: #d4d8df; --band-open: #2cc4b8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1014; --surface: #161920; --surface-2: #1c2028; --ink: #eceef3; --ink-2: #b4bac6; --ink-3: #7f8694; --rule: #2a2f39;
+  --accent: #93a1ff; --accent-soft: #232a4d; --accent-ink: #0e1014; --live: #ff6a5f;
+  --band-rsvp: #39c96c; --band-apply: #ff9a2e; --band-ticket: #5a8dff; --band-ticket-ink: #06122e; --band-wait: #ff6db2; --band-closed: #3c414b; --band-closed-ink: #d4d8df; --band-open: #2cc4b8;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+.mono { font-family: var(--mono); font-size: 11px; letter-spacing: .02em; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); }
+.bar .wrap { display: flex; align-items: center; gap: 16px; padding-block: 10px; }
+.mark { display: flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
+.mark-band { width: 34px; height: 14px; border-radius: 7px; background: var(--band-apply); position: relative; }
+.mark-band::before { content: ""; position: absolute; left: 4px; top: 3px; width: 8px; height: 8px; border-radius: 50%; background: var(--bg); }
+.mark-name { font-family: var(--display); font-stretch: 70%; font-weight: 850; font-size: 22px; letter-spacing: .01em; text-transform: uppercase; line-height: 1; }
+.fresh { display: flex; align-items: center; gap: 8px; color: var(--ink-2); min-width: 0; }
+.fresh .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--band-rsvp); box-shadow: 0 0 0 3px color-mix(in srgb, var(--band-rsvp) 25%, transparent); flex: none; }
+.fresh.stale .dot { background: var(--band-apply); box-shadow: 0 0 0 3px color-mix(in srgb, var(--band-apply) 25%, transparent); }
+.fresh span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search { margin-left: auto; position: relative; flex: 0 1 300px; min-width: 0; }
+.search input { width: 100%; height: 36px; border-radius: 18px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); padding: 0 14px 0 34px; font: inherit; font-size: 14px; }
+.search input::placeholder { color: var(--ink-3); }
+.search svg { position: absolute; left: 12px; top: 10px; width: 16px; height: 16px; stroke: var(--ink-3); fill: none; stroke-width: 2; }
+
+/* hero */
+.hero { padding-block: 28px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 40px; align-items: end; }
+.hero h1 { margin: 0; font-family: var(--display); font-stretch: 68%; font-weight: 850; text-transform: uppercase; font-size: clamp(34px, 4.6vw, 58px); line-height: .92; letter-spacing: -.005em; text-wrap: balance; max-width: 22ch; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p { margin: 14px 0 0; color: var(--ink-2); max-width: 60ch; font-size: 16px; }
+.legend { display: grid; gap: 7px; align-content: end; }
+.legend-row { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink-2); }
+
+/* stat chips (also filters) */
+.stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; padding-bottom: 22px; }
+.stat { text-align: left; border: 1px solid var(--rule); background: var(--surface); border-radius: var(--r); padding: 12px 14px 11px; cursor: pointer; display: grid; gap: 2px; transition: border-color .15s, transform .15s; }
+.stat:hover { border-color: var(--ink-3); }
+.stat[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
+.stat b { font-family: var(--display); font-stretch: 75%; font-weight: 800; font-size: 34px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 13px; color: var(--ink-2); }
+
+/* layout */
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 28px; align-items: start; padding-bottom: 60px; }
+.main { min-width: 0; }
+.rail { display: grid; gap: 18px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 72px); max-height: calc(100vh - 90px); overflow: auto; padding-bottom: 8px; scrollbar-width: thin; }
+
+/* filters */
+.filters { display: grid; gap: 10px; padding: 12px 0 14px; border-top: 1px solid var(--rule); }
+.frow { display: flex; gap: 8px; align-items: center; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.frow::-webkit-scrollbar { display: none; }
+.flabel { flex: none; width: 54px; color: var(--ink-3); }
+.chip { flex: none; height: 30px; padding: 0 12px; border-radius: 15px; border: 1px solid var(--rule); background: var(--surface); cursor: pointer; font-size: 13px; font-weight: 550; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.chip:hover { border-color: var(--ink-3); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip .sw { width: 10px; height: 10px; border-radius: 5px; }
+.chip small { font-family: var(--mono); font-size: 10px; opacity: .7; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 15px; overflow: hidden; flex: none; background: var(--surface); }
+.seg button { height: 28px; padding: 0 12px; border: 0; background: transparent; cursor: pointer; font-size: 13px; font-weight: 550; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.resultline { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-3); padding: 2px 0 6px; flex-wrap: wrap; }
+.linkbtn { background: none; border: 0; padding: 0; cursor: pointer; color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+/* docket */
+.day { margin-top: 18px; }
+.dayhead { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 57px); z-index: 5; display: flex; align-items: baseline; gap: 12px; padding: 8px 0 8px; background: var(--bg); border-bottom: 2px solid var(--ink); }
+.dayhead .dow { font-family: var(--display); font-stretch: 66%; font-weight: 850; font-size: 30px; text-transform: uppercase; line-height: .95; }
+.dayhead .date { font-family: var(--display); font-stretch: 80%; font-weight: 600; font-size: 18px; text-transform: uppercase; color: var(--ink-2); }
+.dayhead .rel { color: var(--accent); }
+.dayhead .cnt { margin-left: auto; color: var(--ink-3); }
+.rows { display: grid; }
+.row { display: grid; grid-template-columns: 84px minmax(0, 1fr) 168px; gap: 4px 16px; padding: 14px 0 14px; border-bottom: 1px solid var(--rule); align-items: start; }
+.row:hover { background: linear-gradient(90deg, transparent, var(--surface-2) 12%, var(--surface-2) 88%, transparent); }
+.t { padding-top: 3px; color: var(--ink-2); }
+.t b { display: block; font-family: var(--mono); font-weight: 600; font-size: 12px; color: var(--ink); }
+.t .live { color: var(--live); font-weight: 600; display: inline-flex; align-items: center; gap: 5px; margin-top: 4px; }
+.t .live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--live); animation: pulse 1.6s infinite; }
+@keyframes pulse { 50% { opacity: .25; } }
+.body { min-width: 0; }
+.title { font-weight: 650; font-size: 16.5px; line-height: 1.28; text-decoration: none; text-wrap: pretty; overflow-wrap: anywhere; }
+.title:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.meta { margin-top: 3px; color: var(--ink-2); font-size: 13.5px; overflow-wrap: anywhere; }
+.meta .sep { color: var(--ink-3); padding: 0 5px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.tag { font-family: var(--mono); font-size: 10.5px; line-height: 1; padding: 5px 7px 4px; border-radius: 5px; background: var(--surface-2); border: 1px solid var(--rule); color: var(--ink-2); white-space: nowrap; }
+.tag.type { background: transparent; }
+.tag.w { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
+.tag.new { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.tag.src { color: var(--ink-3); background: transparent; border-style: dashed; text-decoration: none; }
+a.tag.src:hover { color: var(--ink); }
+.note { margin-top: 6px; font-size: 13px; color: var(--ink-2); max-width: 70ch; }
+
+/* the wristband */
+.bandcell { display: grid; gap: 6px; justify-items: end; }
+.band { --c: var(--band-rsvp); --ci: var(--band-rsvp-ink); position: relative; width: 168px; min-height: 34px; border-radius: 17px; background: var(--c); color: var(--ci); display: grid; align-content: center; padding: 5px 12px 5px 30px; text-decoration: none; }
+.band::before { content: ""; position: absolute; left: 9px; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%; background: var(--bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ci) 30%, transparent); }
+.band::after { content: ""; position: absolute; right: 26px; top: 6px; bottom: 6px; border-left: 2px dotted color-mix(in srgb, var(--ci) 35%, transparent); }
+.band .k { font-family: var(--display); font-stretch: 70%; font-weight: 850; font-size: 15px; text-transform: uppercase; letter-spacing: .03em; line-height: 1; }
+.band .s { font-size: 11px; line-height: 1.15; margin-top: 2px; opacity: .85; padding-right: 18px; }
+.band[data-k="apply"] { --c: var(--band-apply); --ci: var(--band-apply-ink); }
+.band[data-k="ticket"] { --c: var(--band-ticket); --ci: var(--band-ticket-ink); }
+.band[data-k="waitlist"] { --c: var(--band-wait); --ci: var(--band-wait-ink); }
+.band[data-k="closed"] { --c: var(--band-closed); --ci: var(--band-closed-ink); }
+.band[data-k="open"] { --c: var(--band-open); --ci: var(--band-open-ink); }
+.band:hover { filter: brightness(1.05) saturate(1.05); }
+.legend .band { width: 132px; min-height: 26px; padding: 3px 10px 3px 26px; pointer-events: none; }
+.legend .band::before { width: 9px; height: 9px; margin-top: -4.5px; left: 8px; }
+.legend .band::after { right: 18px; }
+.legend .band .k { font-size: 12.5px; }
+.save { border: 0; background: none; cursor: pointer; color: var(--ink-3); display: inline-flex; align-items: center; gap: 5px; padding: 2px 0; }
+.save svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+.save[aria-pressed="true"] { color: var(--accent); }
+.save[aria-pressed="true"] svg { fill: currentColor; }
+.more { margin: 10px 0 0; width: 100%; height: 38px; border: 1px dashed var(--rule); border-radius: var(--r); background: transparent; cursor: pointer; color: var(--ink-2); font-weight: 550; }
+.more:hover { border-color: var(--ink-3); color: var(--ink); }
+.empty { padding: 48px 20px; text-align: center; color: var(--ink-2); border: 1px dashed var(--rule); border-radius: var(--r); margin-top: 18px; }
+
+/* rail panels */
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 14px 16px 12px; }
+.panel h2 { margin: 0 0 10px; font-family: var(--display); font-stretch: 72%; font-weight: 850; font-size: 19px; text-transform: uppercase; letter-spacing: .01em; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.panel h2 small { font-family: var(--mono); font-weight: 400; font-size: 10.5px; color: var(--ink-3); text-transform: none; letter-spacing: 0; }
+.list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.list li { padding: 9px 0; border-top: 1px solid var(--rule); display: grid; gap: 2px; }
+.list li:first-child { border-top: 0; padding-top: 2px; }
+.list a { text-decoration: none; font-weight: 600; font-size: 14px; line-height: 1.3; }
+.list a:hover { text-decoration: underline; text-underline-offset: 2px; }
+.list .sub { font-size: 12.5px; color: var(--ink-2); }
+.dl { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.countdown { font-family: var(--mono); font-size: 11px; font-weight: 600; white-space: nowrap; padding: 3px 6px; border-radius: 4px; background: var(--surface-2); }
+.countdown.hot { background: var(--band-apply); color: var(--band-apply-ink); }
+.countdown.roll { background: var(--band-rsvp); color: var(--band-rsvp-ink); }
+.countdown.soon { background: var(--surface-2); color: var(--ink-2); }
+.people { display: flex; flex-wrap: wrap; gap: 6px; }
+.person { font-size: 12.5px; padding: 4px 8px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--rule); text-decoration: none; white-space: nowrap; }
+.person b { font-family: var(--mono); font-size: 10px; color: var(--accent); margin-left: 4px; }
+a.person:hover { border-color: var(--ink-3); }
+.srcs { width: 100%; border-collapse: collapse; font-size: 13px; }
+.srcs td { padding: 5px 0; border-top: 1px solid var(--rule); }
+.srcs tr:first-child td { border-top: 0; }
+.srcs td:last-child { text-align: right; font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+.ok { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--band-rsvp); margin-right: 7px; vertical-align: 1px; }
+.ok.bad { background: var(--live); }
+.small { font-size: 12.5px; color: var(--ink-2); }
+
+footer { border-top: 1px solid var(--rule); padding-block: 26px 40px; color: var(--ink-2); font-size: 13.5px; }
+footer .wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+footer h3 { margin: 0 0 6px; font-family: var(--display); font-stretch: 72%; font-weight: 800; font-size: 16px; text-transform: uppercase; color: var(--ink); }
+footer p { margin: 0; max-width: 46ch; }
+
+.skeleton { height: 64px; border-bottom: 1px solid var(--rule); background: linear-gradient(90deg, transparent, var(--surface-2), transparent); background-size: 200% 100%; animation: sh 1.4s infinite linear; }
+@keyframes sh { to { background-position: -200% 0; } }
+
+@media (max-width: 1020px) {
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .rail { position: static; max-height: none; overflow: visible; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 22px 14px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; }
+  .legend .lt { display: none; }
+  .legend .band { width: auto; min-width: 0; padding-right: 26px; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat b { font-size: 28px; }
+  .stat:last-child { grid-column: 1 / -1; }
+  .rail { grid-template-columns: minmax(0, 1fr); }
+  .fresh { display: none; }
+  .row { grid-template-columns: 62px minmax(0, 1fr); }
+  .bandcell { grid-column: 2; justify-items: start; grid-auto-flow: column; justify-content: start; align-items: center; gap: 12px; margin-top: 6px; }
+  .band { width: auto; min-width: 150px; }
+  .dayhead .dow { font-size: 26px; }
+  footer .wrap { grid-template-columns: minmax(0, 1fr); }
+  .flabel { width: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Wristband home"><span class="mark-band" aria-hidden="true"></span><span class="mark-name">Wristband</span></a>
+    <div class="fresh mono" id="fresh"><span class="dot"></span><span id="freshText">Loading the latest crawl…</span></div>
+    <label class="search" for="q">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="Search events, hosts, VCs…" autocomplete="off">
+    </label>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div>
+      <h1>Every Bay Area hackathon and founder event, <em>and how to get in.</em></h1>
+      <p>Pulled from Luma, Y Combinator, Cerebral Valley, MLH, Devpost, Stanford, Meetup and Eventbrite every 6 hours, plus the calendars of VCs, schools and the people who keep hosting. Every listing links to the organizer's own page.</p>
+    </div>
+    <div class="legend" aria-label="What the wristband colors mean">
+      <div class="legend-row"><span class="band" data-k="rsvp"><span class="k">RSVP</span></span><span class="lt">Free, just sign up</span></div>
+      <div class="legend-row"><span class="band" data-k="apply"><span class="k">Apply</span></span><span class="lt">Application or host approval</span></div>
+      <div class="legend-row"><span class="band" data-k="ticket"><span class="k">Ticket</span></span><span class="lt">Paid entry</span></div>
+      <div class="legend-row"><span class="band" data-k="waitlist"><span class="k">Waitlist</span></span><span class="lt">Full, join the line</span></div>
+      <div class="legend-row"><span class="band" data-k="closed"><span class="k">Closed</span></span><span class="lt">Sold out or applications over</span></div>
+    </div>
+  </section>
+
+  <section class="wrap stats" id="stats" aria-label="Quick filters"></section>
+
+  <div class="wrap cols">
+    <div class="main">
+      <div class="filters" role="group" aria-label="Filters">
+        <div class="frow">
+          <span class="flabel mono">When</span>
+          <div class="seg" id="range">
+            <button type="button" data-v="7">Next 7 days</button>
+            <button type="button" data-v="30" aria-pressed="true">Next 30 days</button>
+            <button type="button" data-v="all">All upcoming</button>
+            <button type="button" data-v="past">Just happened</button>
+          </div>
+        </div>
+        <div class="frow" id="types"><span class="flabel mono">What</span></div>
+        <div class="frow" id="access"><span class="flabel mono">Entry</span></div>
+        <div class="frow" id="areas"><span class="flabel mono">Where</span></div>
+      </div>
+      <div class="resultline mono" id="resultline"></div>
+      <div id="docket">
+        <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+      </div>
+    </div>
+
+    <aside class="rail" aria-label="Deadlines, recent events and sources">
+      <section class="panel" id="deadlines"><h2>Apply by <small>deadlines</small></h2><ul class="list"></ul></section>
+      <section class="panel" id="recent"><h2>Just happened <small>last 14 days</small></h2><ul class="list"></ul></section>
+      <section class="panel" id="watch"><h2>Watching <small id="watchCount"></small></h2><div id="watchBody" class="small"></div></section>
+      <section class="panel" id="sources"><h2>Sources <small id="srcTime"></small></h2><table class="srcs"><tbody></tbody></table><p class="small" id="srcNote" style="margin:10px 0 0"></p></section>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><h3>How it works</h3><p>A crawler reads each platform's public event data every 6 hours, keeps Bay Area events about hackathons, startups, investors and campuses, and merges the same event listed on several sites. A web and social sweep adds deadlines and announcements that never reach an event platform.</p></div>
+    <div><h3>What the band means</h3><p>Entry rules come straight from the organizer's page: Luma's approval setting, YC's application deadline, Devpost registration, sold-out and waitlist flags. Hosts can change them, so check the event page before you go.</p></div>
+    <div><h3>Watching</h3><p>Events hosted by tracked VCs, schools, labs, community hubs and people get a blue tag. Hosts who keep running relevant events are picked up automatically and followed on the next crawl.</p></div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const TZ = 'America/Los_Angeles';
+  const $ = (s, el = document) => el.querySelector(s);
+  const h = (tag, attrs = {}, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === 'class') el.className = v;
+      else if (k === 'text') el.textContent = v;
+      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? '' : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid.nodeType ? kid : document.createTextNode(kid));
+    return el;
+  };
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem('wb:' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem('wb:' + k, JSON.stringify(v)); } catch {} },
+  };
+
+  const fDow = new Intl.DateTimeFormat('en-US', { timeZone: TZ, weekday: 'short' });
+  const fDate = new Intl.DateTimeFormat('en-US', { timeZone: TZ, month: 'short', day: 'numeric' });
+  const fTime = new Intl.DateTimeFormat('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' });
+  const fKey = new Intl.DateTimeFormat('en-CA', { timeZone: TZ });
+  const dayKey = (d) => fKey.format(d);
+  const ago = (ms) => {
+    const m = Math.round(ms / 60000);
+    if (m < 1) return 'just now';
+    if (m < 60) return `${m} min ago`;
+    const hr = Math.round(m / 60);
+    if (hr < 48) return `${hr}h ago`;
+    return `${Math.round(hr / 24)} days ago`;
+  };
+  const until = (ms) => {
+    const hr = ms / 36e5;
+    if (hr < 1) return `${Math.max(1, Math.round(ms / 60000))} min`;
+    if (hr < 48) return `${Math.round(hr)}h`;
+    return `${Math.round(hr / 24)} days`;
+  };
+
+  const TYPES = [
+    ['hackathon', 'Hackathons'],
+    ['demo', 'Pitch & demo days'],
+    ['vc', 'VC-hosted'],
+    ['school', 'Campus'],
+    ['founder', 'Founder meetups'],
+    ['builder', 'AI builder meetups'],
+    ['conference', 'Conferences'],
+  ];
+  const TYPE_LABEL = { hackathon: 'Hackathon', demo: 'Pitch / demo', vc: 'VC-hosted', school: 'Campus', founder: 'Founder', builder: 'AI meetup', conference: 'Conference', program: 'Program' };
+  const ACCESS = [
+    ['rsvp', 'RSVP', 'var(--band-rsvp)'],
+    ['apply', 'Apply / approval', 'var(--band-apply)'],
+    ['ticket', 'Ticketed', 'var(--band-ticket)'],
+    ['waitlist', 'Waitlist', 'var(--band-wait)'],
+    ['closed', 'Closed', 'var(--band-closed)'],
+  ];
+  const AREAS = ['San Francisco', 'Peninsula', 'South Bay', 'East Bay', 'North Bay'];
+  const SOURCE_NAME = { luma: 'Luma', yc: 'YC', cerebralvalley: 'Cerebral Valley', mlh: 'MLH', devpost: 'Devpost', stanford: 'Stanford', meetup: 'Meetup', eventbrite: 'Eventbrite', curated: 'Sweep' };
+  const PER_DAY = 7;
+  const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></svg>';
+
+  const state = {
+    range: store.get('range', '30'),
+    types: new Set(store.get('types', [])),
+    access: new Set(store.get('access', [])),
+    areas: new Set(store.get('areas', [])),
+    stat: null,
+    q: '',
+    open: new Set(),
+  };
+  let saved = new Set(store.get('saved', []));
+  let DATA = null;
+  let NOW = Date.now();
+
+  // ---------- filtering ----------
+  const kindOf = (e) => (e.access?.kind === 'open' ? 'rsvp' : e.access?.kind || 'rsvp');
+  const typeMatch = (e, t) => e.type === t || (e.tags || []).includes(t) || (t === 'founder' && e.type === 'program');
+  const endOf = (e) => new Date(e.end || e.start).getTime();
+  const isNew = (e) => {
+    const fs = new Date(e.firstSeen).getTime();
+    return fs > DATA._baseline + 36e5 && NOW - fs < 36 * 36e5;
+  };
+
+  function inRange(e) {
+    const s = new Date(e.start).getTime(), end = endOf(e);
+    if (state.range === 'past') return end < NOW && end > NOW - 14 * 864e5;
+    if (end < NOW) return false;
+    if (state.range === 'all') return true;
+    return s < NOW + (+state.range) * 864e5;
+  }
+
+  function passes(e, { ignore } = {}) {
+    if (ignore !== 'range' && !inRange(e)) return false;
+    if (ignore !== 'types' && state.types.size && ![...state.types].some((t) => typeMatch(e, t))) return false;
+    if (ignore !== 'access' && state.access.size && !state.access.has(kindOf(e))) return false;
+    if (ignore !== 'areas' && state.areas.size && !state.areas.has(e.area)) return false;
+    if (state.stat === 'watched' && !e.watched?.length) return false;
+    if (state.stat === 'new' && !isNew(e)) return false;
+    if (state.stat === 'saved' && !saved.has(e.id)) return false;
+    if (state.q) {
+      const hay = `${e.title} ${e.organizer || ''} ${(e.hosts || []).map((x) => x.name).join(' ')} ${(e.watched || []).map((w) => w.name).join(' ')} ${e.city || ''} ${e.venue || ''}`.toLowerCase();
+      if (!state.q.split(/\s+/).every((w) => hay.includes(w))) return false;
+    }
+    return true;
+  }
+
+  // ---------- rendering ----------
+  function band(e) {
+    const k = kindOf(e);
+    const a = e.access || {};
+    const head = { rsvp: a.kind === 'open' ? 'Open' : 'RSVP', apply: 'Apply', ticket: 'Ticket', waitlist: 'Waitlist', closed: 'Closed' }[k];
+    let sub = a.label || '';
+    if (a.deadline && new Date(a.deadline) > NOW) sub = `${k === 'apply' ? 'Apply' : 'Register'} by ${fDate.format(new Date(a.deadline))} · ${until(new Date(a.deadline) - NOW)} left`;
+    else if (k === 'apply' && /host approves/.test(sub)) sub = 'Host approves each guest';
+    else if (k === 'rsvp' && /^RSVP required$/.test(sub)) sub = 'Free registration';
+    if (k === 'ticket' && a.price) sub = a.price;
+    if (a.spots != null && a.spots > 0 && a.spots < 25 && k !== 'closed') sub += ` · ${a.spots} spots left`;
+    return h('a', { class: 'band', 'data-k': a.kind === 'open' ? 'open' : k, href: e.registerUrl || e.url, target: '_blank', rel: 'noopener', 'aria-label': `${head}: ${sub}. Opens the event page.` },
+      h('span', { class: 'k', text: head }), h('span', { class: 's', text: sub }));
+  }
+
+  function timeCell(e) {
+    const s = new Date(e.start), en = e.end ? new Date(e.end) : null;
+    const live = s.getTime() <= NOW && (en ? en.getTime() : s.getTime() + 3 * 36e5) > NOW;
+    const multi = en && dayKey(en) !== dayKey(s) && en - s > 20 * 36e5;
+    const midnight = fTime.format(s) === '12:00 AM';
+    const dateOnly = e.dateOnly || midnight;
+    const main = dateOnly ? (multi ? 'Multi-day' : 'All day') : fTime.format(s);
+    return h('div', { class: 't mono' },
+      h('b', { text: main }),
+      multi ? `→ ${fDow.format(en)} ${fDate.format(en)}` : !dateOnly && en ? `to ${fTime.format(en)}` : '',
+      live ? h('span', { class: 'live', text: 'Live now' }) : null);
+  }
+
+  function row(e) {
+    const where = [];
+    if (e.venue && !e.locationHidden) where.push(e.venue.split(' · ')[0]);
+    const place = [e.neighborhood, e.city || e.area].filter(Boolean).join(', ');
+    if (place && !where.some((w) => w.includes(e.city || '§'))) where.push(place);
+    if (e.locationHidden) where.push('address after RSVP');
+    const meta = [];
+    if (e.organizer) meta.push(e.organizer);
+    if (where.length) meta.push(where.join(' · '));
+    if (e.guests > 20) meta.push(`${e.guests.toLocaleString()} going`);
+    if (e.prize) meta.push(`Prizes: ${e.prize}`);
+    const metaEl = h('div', { class: 'meta' });
+    meta.forEach((m, i) => { if (i) metaEl.append(h('span', { class: 'sep', 'aria-hidden': 'true', text: '/' })); metaEl.append(m); });
+
+    const tags = h('div', { class: 'tags' });
+    if (isNew(e)) tags.append(h('span', { class: 'tag new', text: 'NEW' }));
+    tags.append(h('span', { class: 'tag type', text: TYPE_LABEL[e.type] || e.type }));
+    for (const w of (e.watched || []).slice(0, 3)) tags.append(h('span', { class: 'tag w', title: w.kind === 'person' ? `${w.name} · ${w.org || ''}` : w.kind, text: w.name }));
+    tags.append(h('a', { class: 'tag src', href: e.url, target: '_blank', rel: 'noopener', text: SOURCE_NAME[e.source] || e.source }));
+    for (const a of (e.alsoOn || []).slice(0, 2)) tags.append(h('a', { class: 'tag src', href: a.url, target: '_blank', rel: 'noopener', text: `also ${SOURCE_NAME[a.source] || a.source}` }));
+
+    const isSaved = saved.has(e.id);
+    const saveBtn = h('button', { class: 'save mono', type: 'button', 'aria-pressed': String(isSaved), 'aria-label': isSaved ? 'Remove from saved' : 'Save this event', onclick: () => toggleSave(e.id, saveBtn) },
+      isSaved ? 'Saved' : 'Save');
+    saveBtn.insertAdjacentHTML('afterbegin', STAR);
+
+    return h('article', { class: 'row' },
+      timeCell(e),
+      h('div', { class: 'body' },
+        h('a', { class: 'title', href: e.url, target: '_blank', rel: 'noopener', text: e.title }),
+        metaEl,
+        e.note ? h('div', { class: 'note', text: e.note }) : null,
+        tags),
+      h('div', { class: 'bandcell' }, band(e), saveBtn));
+  }
+
+  function toggleSave(id, btn) {
+    saved.has(id) ? saved.delete(id) : saved.add(id);
+    store.set('saved', [...saved]);
+    const on = saved.has(id);
+    btn.setAttribute('aria-pressed', String(on));
+    btn.lastChild.textContent = on ? 'Saved' : 'Save';
+    renderStats();
+  }
+
+  function renderDocket() {
+    const list = DATA.events.filter((e) => passes(e));
+    const past = state.range === 'past';
+    list.sort((a, b) => (past ? new Date(b.start) - new Date(a.start) : new Date(a.start) - new Date(b.start)));
+    const docket = $('#docket');
+    docket.replaceChildren();
+    const rl = $('#resultline');
+    rl.replaceChildren(h('span', { text: `${list.length} event${list.length === 1 ? '' : 's'}${state.q ? ` matching “${state.q}”` : ''}` }));
+    const filtered = state.types.size || state.access.size || state.areas.size || state.stat || state.q;
+    if (filtered) rl.append(h('button', { class: 'linkbtn mono', type: 'button', text: 'Clear filters', onclick: clearFilters }));
+
+    if (!list.length) {
+      docket.append(h('div', { class: 'empty' },
+        h('p', { text: state.stat === 'saved' ? 'Nothing saved yet. Tap Save on any event to keep it here on this device.' : 'No events match these filters.' }),
+        filtered ? h('button', { class: 'linkbtn', type: 'button', text: 'Clear filters', onclick: clearFilters }) : null));
+      return;
+    }
+    // Multi-day events in progress sit under today.
+    const todayKey = dayKey(new Date(NOW));
+    const groups = new Map();
+    for (const e of list) {
+      let k = dayKey(new Date(e.start));
+      if (!past && k < todayKey) k = todayKey;
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(e);
+    }
+    const tomorrowKey = dayKey(new Date(NOW + 864e5));
+    const yesterdayKey = dayKey(new Date(NOW - 864e5));
+    const frag = document.createDocumentFragment();
+    for (const [k, evs] of groups) {
+      const d = new Date(`${k}T12:00:00-08:00`);
+      const rel = k === todayKey ? 'Today' : k === tomorrowKey ? 'Tomorrow' : k === yesterdayKey ? 'Yesterday' : '';
+      const sec = h('section', { class: 'day', 'aria-label': `${fDow.format(d)} ${fDate.format(d)}` },
+        h('div', { class: 'dayhead' },
+          h('span', { class: 'dow', text: fDow.format(d) }),
+          h('span', { class: 'date', text: fDate.format(d) }),
+          rel ? h('span', { class: 'date rel', text: rel }) : null,
+          h('span', { class: 'cnt mono', text: `${evs.length} event${evs.length === 1 ? '' : 's'}` })));
+      const rows = h('div', { class: 'rows' });
+      let shown = evs;
+      if (!state.open.has(k) && evs.length > PER_DAY && !state.q) {
+        const keep = new Set([...evs].sort((a, b) => b.score - a.score).slice(0, PER_DAY).map((e) => e.id));
+        shown = evs.filter((e) => keep.has(e.id));
+      }
+      shown.forEach((e) => rows.append(row(e)));
+      sec.append(rows);
+      if (shown.length < evs.length) {
+        const hidden = evs.length - shown.length;
+        sec.append(h('button', { class: 'more', type: 'button', text: `Show ${hidden} more on ${fDow.format(d)} · ranked lower for relevance`, onclick: () => { state.open.add(k); renderDocket(); } }));
+      }
+      frag.append(sec);
+    }
+    docket.append(frag);
+  }
+
+  function clearFilters() {
+    state.types.clear(); state.access.clear(); state.areas.clear(); state.stat = null; state.q = ''; $('#q').value = '';
+    persist(); renderAll();
+  }
+  const persist = () => { store.set('range', state.range); store.set('types', [...state.types]); store.set('access', [...state.access]); store.set('areas', [...state.areas]); };
+
+  function renderStats() {
+    const up = DATA.events.filter((e) => endOf(e) >= NOW);
+    const soon = up.filter((e) => new Date(e.start) < NOW + 30 * 864e5);
+    const defs = [
+      ['type:hackathon', soon.filter((e) => typeMatch(e, 'hackathon')).length, 'hackathons in the next 30 days'],
+      ['access:apply', soon.filter((e) => kindOf(e) === 'apply').length, 'need an application or approval'],
+      ['watched', soon.filter((e) => e.watched?.length).length, 'hosted by VCs, schools & people we watch'],
+      ['new', up.filter(isNew).length, 'new since yesterday'],
+      ['saved', saved.size, 'saved on this device'],
+    ];
+    const box = $('#stats');
+    box.replaceChildren(...defs.map(([key, n, label]) => {
+      const pressed = (key === 'type:hackathon' && state.types.size === 1 && state.types.has('hackathon')) ||
+        (key === 'access:apply' && state.access.size === 1 && state.access.has('apply')) || state.stat === key;
+      return h('button', { class: 'stat', type: 'button', 'aria-pressed': String(pressed), onclick: () => applyStat(key, pressed) },
+        h('b', { text: String(n) }), h('span', { text: label }));
+    }));
+  }
+  function applyStat(key, pressed) {
+    if (key === 'type:hackathon') { state.types = pressed ? new Set() : new Set(['hackathon']); }
+    else if (key === 'access:apply') { state.access = pressed ? new Set() : new Set(['apply']); }
+    else { state.stat = pressed ? null : key; if (!pressed && key !== 'new' && state.range === 'past') state.range = 'all'; if (!pressed && key === 'saved') state.range = 'all'; }
+    if (!pressed && (key === 'type:hackathon' || key === 'access:apply') && state.range === 'past') state.range = '30';
+    persist(); renderAll();
+  }
+
+  function chipRow(id, defs, set) {
+    const row = $(id);
+    row.querySelectorAll('.chip').forEach((c) => c.remove());
+    for (const [v, label, color] of defs) {
+      const n = DATA.events.filter((e) => passes(e, { ignore: id.slice(1) }) && (id === '#types' ? typeMatch(e, v) : id === '#access' ? kindOf(e) === v : e.area === v)).length;
+      row.append(h('button', { class: 'chip', type: 'button', 'aria-pressed': String(set.has(v)), onclick: () => { set.has(v) ? set.delete(v) : set.add(v); persist(); renderAll(); } },
+        color ? h('span', { class: 'sw', style: `background:${color}` }) : null, label, h('small', { class: 'num', text: String(n) })));
+    }
+  }
+
+  function renderFilters() {
+    chipRow('#types', TYPES, state.types);
+    chipRow('#access', ACCESS, state.access);
+    chipRow('#areas', AREAS.map((a) => [a, a === 'San Francisco' ? 'SF' : a]), state.areas);
+    $('#range').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === state.range)));
+  }
+
+  function renderRail() {
+    // Deadlines: programs + events with an explicit application/registration deadline.
+    const dl = [];
+    for (const p of DATA.programs || []) {
+      if (p.status === 'closed') continue;
+      dl.push({ title: p.name, url: p.url, sub: p.note, when: p.deadline ? new Date(p.deadline).getTime() : null, status: p.status, opens: p.opens });
+    }
+    for (const e of DATA.events) {
+      const d = e.access?.deadline && new Date(e.access.deadline).getTime();
+      if (d && d > NOW && d < NOW + 45 * 864e5) dl.push({ title: e.title, url: e.url, sub: `${fDow.format(new Date(e.start))} ${fDate.format(new Date(e.start))} · ${e.organizer || ''}`, when: d, status: 'open' });
+    }
+    dl.sort((a, b) => (a.when ?? 9e15) - (b.when ?? 9e15));
+    const dUl = $('#deadlines .list');
+    dUl.replaceChildren(...dl.slice(0, 8).map((x) => {
+      let cd;
+      if (x.when) { const left = x.when - NOW; cd = h('span', { class: `countdown${left < 7 * 864e5 ? ' hot' : ''}`, text: `${fDate.format(new Date(x.when))} · ${until(left)}` }); }
+      else if (x.status === 'rolling') cd = h('span', { class: 'countdown roll', text: 'Rolling' });
+      else if (x.status === 'soon') cd = h('span', { class: 'countdown soon', text: x.opens ? `Opens ${new Date(x.opens + '-15').toLocaleString('en-US', { month: 'short' })}` : 'Soon' });
+      else cd = h('span', { class: 'countdown roll', text: 'Open now' });
+      return h('li', {}, h('div', { class: 'dl' }, h('a', { href: x.url, target: '_blank', rel: 'noopener', text: x.title }), cd), x.sub ? h('div', { class: 'sub', text: x.sub }) : null);
+    }));
+    if (!dl.length) dUl.append(h('li', { class: 'sub', text: 'No open deadlines right now.' }));
+
+    // Just happened: news + notable recently ended events.
+    const items = (DATA.news || []).map((n) => ({ t: new Date(n.date + 'T18:00:00-07:00').getTime(), title: n.title, url: n.url, sub: n.body }));
+    for (const e of DATA.events) {
+      const end = endOf(e);
+      if (end < NOW && end > NOW - 14 * 864e5 && (e.type === 'hackathon' || e.type === 'demo' || e.watched?.length) && e.score >= 60) {
+        items.push({ t: end, title: e.title, url: e.url, sub: `${fDate.format(new Date(e.start))} · ${e.organizer || TYPE_LABEL[e.type]}` });
+      }
+    }
+    const seenT = new Set();
+    const rec = items.sort((a, b) => b.t - a.t).filter((x) => { const k = x.title.slice(0, 30); return seenT.has(k) ? false : seenT.add(k); }).slice(0, 7);
+    $('#recent .list').replaceChildren(...rec.map((x) => h('li', {}, h('a', { href: x.url, target: '_blank', rel: 'noopener', text: x.title }), h('div', { class: 'sub', text: x.sub }))));
+
+    // Watching
+    const w = DATA.watchlist;
+    $('#watchCount').textContent = `${w.orgs.length} orgs · ${w.people.length} people`;
+    const hitCount = new Map();
+    for (const e of DATA.events) if (endOf(e) >= NOW) for (const x of e.watched || []) hitCount.set(x.name, (hitCount.get(x.name) || 0) + 1);
+    const topOrgs = [...hitCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 14);
+    const body = $('#watchBody');
+    body.replaceChildren(
+      h('p', { style: 'margin:0 0 8px', text: 'Most upcoming events among tracked VCs, schools, labs and people:' }),
+      h('div', { class: 'people' }, ...topOrgs.map(([n, c]) => h('button', { class: 'person', type: 'button', style: 'cursor:pointer', onclick: () => { state.q = n.toLowerCase(); $('#q').value = n; state.range = 'all'; persist(); renderAll(); scrollToDocket(); } }, n, h('b', { text: String(c) })))),
+      h('p', { style: 'margin:12px 0 8px', text: 'Hosts who keep running events, found automatically and followed each crawl:' }),
+      h('div', { class: 'people' }, ...(DATA.activeHosts || []).slice(0, 12).map((x) =>
+        x.x ? h('a', { class: 'person', href: `https://x.com/${x.x}`, target: '_blank', rel: 'noopener' }, x.name, h('b', { text: String(x.events) }))
+            : h('span', { class: 'person' }, x.name, h('b', { text: String(x.events) })))));
+
+    // Sources
+    const tb = $('#sources tbody');
+    tb.replaceChildren(...DATA.sources.filter((s) => s.id !== 'crosscheck' || s.kept).map((s) =>
+      h('tr', {}, h('td', {}, h('span', { class: `ok${s.ok ? '' : ' bad'}`, title: s.ok ? 'Crawled OK' : s.error || 'Failed' }),
+        s.home ? h('a', { href: s.home, target: '_blank', rel: 'noopener', style: 'text-decoration:none', text: s.name }) : s.name),
+        h('td', { text: s.ok ? `${s.kept} kept` : 'retrying' }))));
+    $('#srcTime').textContent = `crawled ${ago(NOW - new Date(DATA.generatedAt))}`;
+    const learned = DATA.watchlist.learnedCalendars;
+    $('#srcNote').textContent = `${DATA.sources.reduce((n, s) => n + (s.fetched || 0), 0).toLocaleString()} listings read, ${learned} organizer calendars followed. Next crawl ${new Date(DATA.nextCrawlAt) > NOW ? 'in ' + until(new Date(DATA.nextCrawlAt) - NOW) : 'due now'}.`;
+  }
+
+  function renderFresh() {
+    const age = NOW - new Date(DATA.generatedAt).getTime();
+    const stale = age > (DATA.intervalHours || 6) * 2 * 36e5;
+    $('#fresh').classList.toggle('stale', stale);
+    $('#freshText').textContent = `${stale ? 'Last crawl' : 'Crawled'} ${ago(age)} · ${DATA.counts.upcoming} upcoming · refreshes every ${DATA.intervalHours || 6}h`;
+  }
+
+  const scrollToDocket = () => $('.filters').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+
+  function renderAll() {
+    NOW = Date.now();
+    renderFresh(); renderStats(); renderFilters(); renderDocket();
+  }
+
+  $('#range').addEventListener('click', (ev) => {
+    const b = ev.target.closest('button'); if (!b) return;
+    state.range = b.dataset.v; persist(); renderAll();
+  });
+  let qt;
+  $('#q').addEventListener('input', (ev) => {
+    clearTimeout(qt);
+    qt = setTimeout(() => { state.q = ev.target.value.trim().toLowerCase(); renderFilters(); renderDocket(); }, 120);
+  });
+
+  async function load() {
+    try {
+      const res = await fetch('events.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      DATA = await res.json();
+      DATA._baseline = Math.min(...DATA.events.map((e) => new Date(e.firstSeen).getTime()));
+      renderAll(); renderRail();
+    } catch (err) {
+      $('#docket').replaceChildren(h('div', { class: 'empty' }, h('p', { text: 'The event feed did not load. Reload the page to try again.' }), h('p', { class: 'mono', text: String(err.message || err) })));
+      $('#freshText').textContent = 'Feed unavailable';
+    }
+  }
+  load();
+  // Keep relative times honest while the page stays open.
+  setInterval(() => { if (DATA) { NOW = Date.now(); renderFresh(); } }, 60000);
+})();
+</script>

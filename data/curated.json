@@ -1,0 +1,126 @@
+{
+  "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
+  "sweptAt": "2026-10-19T22:30:00-07:00",
+  "items": [
+    {
+      "kind": "event",
+      "title": "Make Something Agents Want",
+      "url": "https://events.ycombinator.com/MakeSomethingAgentsWant",
+      "start": "2026-10-17T16:00:00.000Z",
+      "end": "2026-10-18T20:30:00.000Z",
+      "city": "San Francisco",
+      "venue": "Y Combinator, San Francisco",
+      "organizer": "Y Combinator",
+      "hosts": [
+        {
+          "name": "Y Combinator",
+          "x": "ycombinator"
+        }
+      ],
+      "type": "hackathon",
+      "image": "https://d2xtzufx9mvgbo.cloudfront.net/events/Make-agents_want_1920x1080-6d85104bee460773.png",
+      "note": "Two-day hackathon at YC's SF office on building for agents as the user: agent experience, headless MCPs, docs written for agents. 225 spots.",
+      "access": {
+        "kind": "closed",
+        "labelOverride": "Applications closed Oct 16"
+      },
+      "sourceUrl": "https://events.ycombinator.com/MakeSomethingAgentsWant",
+      "foundVia": "YC event page"
+    },
+    {
+      "kind": "event",
+      "title": "TreeHacks 2027",
+      "url": "https://treehacks.com/",
+      "start": "2027-02-12T12:00:00-08:00",
+      "end": "2027-02-14T12:00:00-08:00",
+      "dateOnly": true,
+      "city": "Stanford",
+      "venue": "Stanford University",
+      "organizer": "TreeHacks · Stanford",
+      "type": "hackathon",
+      "note": "Stanford's flagship 36-hour hackathon. Open to enrolled undergrad and grad students worldwide; Stanford students are not auto-accepted.",
+      "access": {
+        "kind": "apply",
+        "labelOverride": "Applications open"
+      },
+      "sourceUrl": "https://treehacks.com/",
+      "foundVia": "TreeHacks site"
+    },
+    {
+      "kind": "override",
+      "id": "mlh:cal-hacks-13-0",
+      "access": {
+        "kind": "closed",
+        "labelOverride": "Applications closed Sep 20"
+      },
+      "note": "Applications were due Sept 13 (priority) and Sept 20 (regular) at hive.hackberkeley.org.",
+      "sourceUrl": "https://www.calhacks.io/"
+    },
+    {
+      "kind": "program",
+      "name": "Y Combinator — Winter 2027 batch",
+      "org": "Y Combinator",
+      "url": "https://www.ycombinator.com/apply",
+      "status": "open",
+      "deadline": "2026-11-02T20:00:00-08:00",
+      "note": "On-time deadline Nov 2 at 8pm PT; decisions by Dec 11. Batch runs January–March in San Francisco. Late applications are still reviewed.",
+      "sourceUrl": "https://www.ycombinator.com/apply"
+    },
+    {
+      "kind": "program",
+      "name": "a16z speedrun",
+      "org": "a16z",
+      "url": "https://speedrun.a16z.com/",
+      "status": "rolling",
+      "deadline": null,
+      "note": "Applications accepted on a rolling basis. Up to $1M first check, targeting a two-week close.",
+      "sourceUrl": "https://speedrun.a16z.com/"
+    },
+    {
+      "kind": "program",
+      "name": "Berkeley SkyDeck — Batch 24",
+      "org": "UC Berkeley",
+      "url": "https://skydeck.berkeley.edu/apply/",
+      "status": "soon",
+      "deadline": null,
+      "opens": "2027-01",
+      "note": "Applications for Batch 24 open in January. Batch 23 starts Nov 2, 2026.",
+      "sourceUrl": "https://skydeck.berkeley.edu/apply/"
+    },
+    {
+      "kind": "program",
+      "name": "TreeHacks 2027 hacker applications",
+      "org": "Stanford",
+      "url": "https://treehacks.com/",
+      "status": "open",
+      "deadline": null,
+      "note": "Event Feb 12–14, 2027 at Stanford. Travel, meals and lodging covered for accepted hackers.",
+      "sourceUrl": "https://treehacks.com/"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-18",
+      "title": "YC wrapped “Make Something Agents Want”, a two-day hackathon on building for AI agents",
+      "body": "225 builders at YC's SF office worked on agent experience: headless MCP servers, agent-readable docs and token-efficient APIs.",
+      "url": "https://events.ycombinator.com/MakeSomethingAgentsWant",
+      "org": "Y Combinator"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-19",
+      "title": "YC Winter 2027 applications close Nov 2",
+      "body": "On-time applicants hear back by Dec 11. Spring, Summer and Fall 2027 early-decision applications are open too.",
+      "url": "https://www.ycombinator.com/apply",
+      "org": "Y Combinator"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-19",
+      "title": "TreeHacks 2027 is taking applications for Feb 12–14 at Stanford",
+      "body": "Open to college students worldwide. Travel, meals and lodging are covered for accepted hackers.",
+      "url": "https://treehacks.com/",
+      "org": "Stanford"
+    }
+  ],
+  "sweepCursor": 0
+}

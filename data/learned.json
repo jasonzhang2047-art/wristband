@@ -1,0 +1,2312 @@
+{
+  "updatedAt": "2026-10-20T06:34:48.796Z",
+  "lumaCalendars": [
+    {
+      "id": "cal-S7gDcd9Akzu62RD",
+      "name": "[SF] HackerSquad",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 42,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "HackerSquad"
+    },
+    {
+      "id": "cal-zEL9BYZ1DEdoIfx",
+      "name": "StartX Founder Exclusive",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 39,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-Ve0M7LoDOpdnF3z",
+      "name": "South Park Commons",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 36,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "South Park Commons"
+    },
+    {
+      "id": "cal-4TEeXLXVUtUqg91",
+      "name": "Berkeley Gateway Accelerator",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 31,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "UC Berkeley"
+    },
+    {
+      "id": "cal-wdFQbbJ0VZTU33E",
+      "name": "Builderbase Hackathons",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 30,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Builderbase"
+    },
+    {
+      "id": "cal-zkDNpjkeOUbcOcF",
+      "name": "MTC Berkeley",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 28,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "UC Berkeley"
+    },
+    {
+      "id": "cal-M3HY5wF76RjMHAr",
+      "name": "The Residency - Bay Area",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 24,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "The Residency"
+    },
+    {
+      "id": "cal-qpx13Kaddx6Qd29",
+      "name": "Stanford LP Seminar",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 20,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-iHkz5obZdong4ta",
+      "name": "Founders, Inc. Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 18,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Founders Inc"
+    },
+    {
+      "id": "cal-DLxwYFBQH1LAo0O",
+      "name": "Stripe Startups",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 18,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stripe"
+    },
+    {
+      "id": "cal-yi89DuFp8oeOEAZ",
+      "name": "Hustle Fund Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 18,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Hustle Fund"
+    },
+    {
+      "id": "cal-gBk6lYjIteqM1z8",
+      "name": "StartX Partners",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 16,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-TVpiEZu23bsIljH",
+      "name": "Antler US",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 13,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Antler"
+    },
+    {
+      "id": "cal-tBrN1VZHj1ZWaZ2",
+      "name": "YC Alumni - San Francisco",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 13,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Y Combinator"
+    },
+    {
+      "id": "cal-NWahjrHwbSKfxEs",
+      "name": "Plug and Play Physical Industries",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Plug and Play"
+    },
+    {
+      "id": "cal-LO8vEyiS1bADtaM",
+      "name": "IEEE @ Stanford",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 10,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-6Us0Fb1Cvz3T2YV",
+      "name": "StartX & Friends",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 9,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-jTQ06qfv6ZwjEIu",
+      "name": "Stanford GSB Government & Politics Club",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-sa3qxwubSMBwKYL",
+      "name": "Gemini Meetup",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Google DeepMind"
+    },
+    {
+      "id": "cal-lYa2810srHvkQRC",
+      "name": "Modal",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Modal"
+    },
+    {
+      "id": "cal-msBZs0wsmalEGH0",
+      "name": "Kindred Ventures",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Kindred Ventures"
+    },
+    {
+      "id": "cal-NVAu6mibtGOgYXK",
+      "name": "OpenAI Student Collective at UC Berkeley",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "UC Berkeley"
+    },
+    {
+      "id": "cal-oexXgeOwZvwwMnx",
+      "name": "GitHub Policy Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Microsoft"
+    },
+    {
+      "id": "cal-eg8NUaZmrLHoqfH",
+      "name": "Stanford Frontier Signal: From Hardware to Physical AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-U8gu4nqAB1l5Ln5",
+      "name": "Stanford ANZ Club",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-opuookcLigzjFkG",
+      "name": "Stanford xBuilders",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-IErx8PGLX1zg9H7",
+      "name": "Plug and Play Taiwan",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Plug and Play"
+    },
+    {
+      "id": "cal-pIyhdi4aRhZUicm",
+      "name": "Plug and Play Canada",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Plug and Play"
+    },
+    {
+      "id": "cal-sQ96963Pp5vVxZl",
+      "name": "Plug and Play Tech Center",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Plug and Play"
+    },
+    {
+      "id": "cal-ojoAmEYmoppvMZc",
+      "name": "BASES",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-LwZbk7FBYGShUJS",
+      "name": "Llama Lounge: The AI Startup Series",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Meta"
+    },
+    {
+      "id": "cal-vXKwL7EyVXQRTFb",
+      "name": "StartX Mentor Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-8EtFfS1gDogglBc",
+      "name": "Stripe Developer Meetups",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stripe"
+    },
+    {
+      "id": "cal-rpbGztlf5pgDfBq",
+      "name": "Startup Events @ Stanford Founders",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Stanford"
+    },
+    {
+      "id": "cal-iDGRd9gjoWOGUy5",
+      "name": "CH/UCSF/FCMS Healthcare Conference",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "UCSF"
+    },
+    {
+      "id": "cal-HwuomrTAI5Ip5SB",
+      "name": "Microsoft Foundry Live",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z",
+      "org": "Microsoft"
+    },
+    {
+      "id": "cal-3XyuS65JPasgZ5y",
+      "name": "Devnovate",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 49,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-OwLywRAFub0sFge",
+      "name": "TechEquity Ai - Silicon Valley",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 36,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-PuFzb115XJDoaYO",
+      "name": "Bright Data",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 33,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Ye2z2kKHbdGvR3y",
+      "name": "Build with AI Club",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 32,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-EVJ0XV6EJegxAT7",
+      "name": "tokens&",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 28,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-MvY3wcADGCzQG99",
+      "name": "Beta University Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 24,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-EGketBV0F9ykq1j",
+      "name": "Ascent Valley Community Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 22,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-TmA5yec4z2YUAuY",
+      "name": "Women in AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 22,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-M0NHYeHPJEraYEF",
+      "name": "MBC BioLabs - Events",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 21,
+      "lastRelevantAt": "2026-10-20T06:31:55.345Z"
+    },
+    {
+      "id": "cal-R9K0oGkHNqaGmGt",
+      "name": "Party",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 21,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-apuuQlzSJIo1CMm",
+      "name": "TatianaSF",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 20,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-8oifTVP4wfPwZEm",
+      "name": "BondHaus",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 18,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ICOBVGmdiQytZUQ",
+      "name": "Synexis.io",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 17,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-OmpgKprK483Umxi",
+      "name": "AICamp",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 17,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-u2GfZ2eQGgdSV2Z",
+      "name": "SF AI Science Studio",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 16,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-dmuTd5PmvY7oibs",
+      "name": "Seldon Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 16,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-RzxS2NU7oxrpGFT",
+      "name": "Inception Studio Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 16,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-5zlJAmvwOGMkx3z",
+      "name": "Northeastern University Silicon Valley Campus",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 14,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ofXMwxW9NLr0RDU",
+      "name": "Granola",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-tFAzNGOZ9xn6kT2",
+      "name": "SF Hardware Meetup",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-s4YGQPBsXhvDfiR",
+      "name": "super{set}",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-vSo9sRaAQOgoflu",
+      "name": "Rho Community Calendar",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Z1oy6L9MeCayf9j",
+      "name": "PromptQL Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-lAiTgFNKOCJhryg",
+      "name": "Hack for Social Impact",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-HyARUMOBHJqyR5H",
+      "name": "TestMu AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-poqqFJrkuygzxPh",
+      "name": "Omnara",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-h47zZLSDhU6ZAd5",
+      "name": "Local Align",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-AJpfQVFYtwnIIBy",
+      "name": "Corgi",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ckK7XwrUhUG6oVi",
+      "name": "DIY Robocars",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-T3QXfRpK0pBwYqX",
+      "name": "You.com",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-dJITEHKdiSK8PhE",
+      "name": "ODSC AI (Open Data Science Conference)",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ZKdD5hfFhd6abNa",
+      "name": "ComfyUI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-M242XGUN6Hb9LMI",
+      "name": "Viam",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-RZbHpa33PT0peAT",
+      "name": "STRANGER BUILDS 🎃",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-hHtCSRQC5c5ZOoA",
+      "name": "Building AI Together | Union.ai",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-wxCcWx57aFiAFH9",
+      "name": "Archil",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-0JE8SiQKgmJoT5v",
+      "name": "Obvious Community Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-MXpEbyRuHvXGWt6",
+      "name": "Liquid AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-FWSGvYUdYxl6gUE",
+      "name": "Iterate",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-hXinY697yx9EE7H",
+      "name": "Builder Pub",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-jeylSPNEDMkuwMy",
+      "name": "Worldwide Studios",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 12,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-IKXeiaabQYEWyuk",
+      "name": "Failproof AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 11,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-nWMs45GZBmXxkFv",
+      "name": "NOMAD STARTUP & INVESTOR EVENTS",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 11,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-y6MriDCMipeluRK",
+      "name": "Innovate Bay",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 10,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Z1tslEBMjjCh4fd",
+      "name": "WorkOS Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 10,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-px2POMvuDzwk8w6",
+      "name": "Coshell",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 9,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-MFfNVPXHux11fWV",
+      "name": "Design Field Notes",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 8,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-jULwsuYrZLEczsm",
+      "name": "X26",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 8,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-jt65vSEP2EUsUxH",
+      "name": "Tribe Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 8,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-UA6dXkGHTUGUq35",
+      "name": "Aureum Leaders Circle",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 8,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-J5czAMgngEmlTLT",
+      "name": "B.E.L.L.E Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 8,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-JpSqJ9fWyVQF4wS",
+      "name": "Scalekit",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-bCU1DaydlGSsazG",
+      "name": "Brderless",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-XcIP6a0xjvfCbe2",
+      "name": "Vibe House",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-X8N5dDX4YUe824j",
+      "name": "Garry's List",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-NKiN770f0nAeAFv",
+      "name": "Startup Grind",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-uKHgmFwHhKWFLgw",
+      "name": "⚕️SF HealthTech Week⚕️ Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-r8sBZiNOsfXtnnj",
+      "name": "Context, Community, Connections, & Capital",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 7,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-5QhOCaS85utuot0",
+      "name": "Builders for San Francisco",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 6,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-jDDikxFohttStvO",
+      "name": "Ontology of Value®",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 6,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-xGX22nQS2LizCiP",
+      "name": "Solo GPs",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-AOor6RlDhnQPgUH",
+      "name": "Orbifold AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-aqoUnPceReoE17u",
+      "name": "MCPJam",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Ub48jmHyPcbZULy",
+      "name": "Mux",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-fREQw97AJjjw2Wg",
+      "name": "Silicon Valley ISSA Chapter",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-anRrBMBauUWqBAc",
+      "name": "Schematic",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-xZr2gxEGWHB2Iv9",
+      "name": "Laravel",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-PE4mtChUkOcaLla",
+      "name": "Workato Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-AfiFgtT2DpGmCWO",
+      "name": "Alien",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-o7b2ZGuPx1SRhcX",
+      "name": "Unicorn Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-BBvmIOrACtTdNMf",
+      "name": "Vanta Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ffZMpSc1tJiBS9b",
+      "name": "the frontier syndicate",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Cj9mMU4rSQva1HA",
+      "name": "Temporal Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-7obGKtrYXftSpPW",
+      "name": "Milvus Meetup",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-grB1VLiXTiTmcF7",
+      "name": "The Social House Calendar",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-zQZ5opMt0JU80Oy",
+      "name": "1984",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-f1OcSqfr4bQpzMQ",
+      "name": "Infisical",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-GQy47RcMPOhb9Ef",
+      "name": "Red Heron Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-JQTWXATiNgGhSFK",
+      "name": "ACCELR8 Hacker House",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-FqY35d9pXQxDT3J",
+      "name": "Infron",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-TBhZpnqo7gnp0ic",
+      "name": "Lovart",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-DMbGovRNyatd9hg",
+      "name": "Nasiko",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-BFpBK04Pk1xs1bp",
+      "name": "Inkle",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-YKwEv0xAlmNR6VN",
+      "name": "Leverage",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ocwBdigzh0n56LS",
+      "name": "Pioneers",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-becT5G2HdL3gxYT",
+      "name": "StepFun Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-dVRlEjlIHbEKsHZ",
+      "name": "Novara Social SF",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-L8EuVHDQtkwVTxa",
+      "name": "GMI Cloud",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-u1El9wNaIzJcb2s",
+      "name": "Family Office Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-rxsxtgx1YJeF4tV",
+      "name": "Trellis Hosted Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-m1B6N8gMuVnPman",
+      "name": "Open Source AI Week",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-qunNpTCipkCLD7z",
+      "name": "Research to the People Patient Hackathons",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-iS2KRUYIWYRlFSA",
+      "name": "2%Tech",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-8yU2gaRigSEpkAG",
+      "name": "AI Realized",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Ed9LZlXCA7Of8DZ",
+      "name": "The Human Loop",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-cVgS1Q9do4ONVHG",
+      "name": "CyberSeed",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-03Oy7sYPjdCKcja",
+      "name": "Rootly",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-NnaZzr6fFujcqTE",
+      "name": "Factory Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-iBRVnXUpDLC2Wo2",
+      "name": "One Way Summit",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-dIb6cylG94Gaz6y",
+      "name": "Ontology of Value® Certification Program",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-4oxFoZ4G9ajDqmj",
+      "name": "SE Ventures",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-mJEPpUBzj1x7Rqr",
+      "name": "Heavybit Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-PVfhSUgLiiaGDmZ",
+      "name": "Sentry",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ovRLoZipYSsJwAx",
+      "name": "Swissnex in San Francisco",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-cf0Ly7rAuHG5Gyt",
+      "name": "Fintech Next",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-s04ZnELliHbbH5Z",
+      "name": "The CEO Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-rb9pfH5GGBBqWIU",
+      "name": "Founders Circle Capital",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-XcOOjH306QmEn4o",
+      "name": "KSC Silicon Valley Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-c8xnPxITLROazEk",
+      "name": "IntelliPro Group",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-wbQfLedLsCYmpQ4",
+      "name": "Better Games, Better Gamers",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-nwh04Obbq3hCUgD",
+      "name": "Ecompreneur by MDS.co",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-ZS03NuY5LMc9W0V",
+      "name": "CMU Integrated Innovation Institute",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-82VhGdIyCA5TMCz",
+      "name": "Data For AI Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Biw4DalBeP4n2Zp",
+      "name": "Digitalundivided",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-XYwyCSeZk2XjeIr",
+      "name": "Box Devs",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-iPEn8yRv7qU6xab",
+      "name": "AI Loves Data",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-YWeNOlQm4LcU1Yk",
+      "name": "AAIF Community San Francisco",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-JF0ds2fSC6bLDIJ",
+      "name": "Resilience Week 2026",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-VH6rMTrbE4qd3hI",
+      "name": "WMF - We Make Future",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-1fiKY7F3AIQQ1FN",
+      "name": "Onsen Global",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-RJk8GyMzvyEPlMP",
+      "name": "Slash Financial",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-l76607AsonZ1F7F",
+      "name": "Baseten Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-q6EzqgFvaia6ZG8",
+      "name": "Fireside Dinners",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-Tq61BAaLwVraOxP",
+      "name": "ICA Fund",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-JkyAUJKgFDnkdBx",
+      "name": "Chen Institute",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-X2lD0GmFtSn9cSU",
+      "name": "Shor Community",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-3N0mE3c2jIF6cSG",
+      "name": "Notre Dame Tech Forum",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-fFSkiSE6xmZa4zi",
+      "name": "University Digital Asset Xcelerator",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-3XwfMLvyq83gGsz",
+      "name": "MomFounder Collective",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-2POWups82tMSnKj",
+      "name": "SF AI Health Studio",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-LfuY0z2VoJDsMqK",
+      "name": "DECODE",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-8zLyKMgaKTvonbT",
+      "name": "Open Source for AI",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-1cPqxnoGqUHzp4n",
+      "name": "Founders on Tap",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-HFXnLnxEFX17Yjr",
+      "name": "Vibe Your SaaS // IRL",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-qHEDltsO0Gr0WtD",
+      "name": "Deepgram",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-W7Y5ENxlkgRi9xD",
+      "name": "Mavka Capital Events",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-7EExYtrwIBnZxrS",
+      "name": "Netsmartz",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-wyubY8pR0Jw3D00",
+      "name": "Third Coast Foundry",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-rF0yFlAusXNCDqy",
+      "name": "R42 Institute & Venture Group",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-hs1EcEhxxSirPXN",
+      "name": "Magnimind Academy",
+      "learnedAt": "2026-10-20T06:31:32.182Z",
+      "hits": 4,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-NxAKuIvu8ZN9rkI",
+      "name": "American South Asian Network (asan)",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-JTdFQadEz0AOxyV",
+      "name": "Bond AI - San Francisco and Bay Area",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-deElbIosr8tNNKN",
+      "name": "Proving Ground",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-GfQqE7E18nxIYE9",
+      "name": "Cloud Native Geospatial Meetups",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-DygyGxGL2RQ7g9h",
+      "name": "FounderCoHo",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-lMXGMbl6aL2u88E",
+      "name": "DND",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 3,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-0JyNgX90G3W01Ky",
+      "name": "Emergent",
+      "learnedAt": "2026-10-20T06:33:59.157Z",
+      "hits": 2,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-1CS0UUaxj3v3rUl",
+      "name": "OpenStages Calendar",
+      "learnedAt": "2026-10-20T06:33:59.157Z",
+      "hits": 2,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-m6Un5hAyjYpabSm",
+      "name": "Lightsage (formerly Sapient)",
+      "learnedAt": "2026-10-20T06:33:59.157Z",
+      "hits": 2,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "cal-jafV0dHAR6JbNCS",
+      "name": "Murray - Open Future Forum and Friends",
+      "learnedAt": "2026-10-20T06:31:55.345Z",
+      "hits": 1,
+      "lastRelevantAt": "2026-10-20T06:31:55.345Z"
+    }
+  ],
+  "lumaUsers": [
+    {
+      "id": "usr-eGOHWjRQ2O39POL",
+      "name": "Sahar Mor (Bond AI)",
+      "x": "theaievangelist",
+      "watched": "Sahar Mor",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-2UOrmiN6cMQfFFs",
+      "name": "Michael Raspuzzi",
+      "x": "michaelraspuzzi",
+      "watched": "Michael Raspuzzi",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VQ0LF6tAQaIxp4G",
+      "name": "Dave Nielsen",
+      "x": "davenielsen",
+      "watched": "Dave Nielsen",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-FZNFNdHiVZzwErg",
+      "name": "Arjita Sethi",
+      "x": "arjita_sethi",
+      "watched": "Arjita Sethi",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-TwytvtxC8ZEHp4p",
+      "name": "Grace Gong",
+      "x": "gracegonggg",
+      "watched": "Grace Gong",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-QNxFqCrBPCXMMAg",
+      "name": "Rocky Yu",
+      "x": "agihouse_org",
+      "watched": "Rocky Yu",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-9IOkI8h4ua0F0iD",
+      "name": "Garry Tan",
+      "x": null,
+      "watched": "Garry Tan",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-BhL1mNyX78ZX6D1",
+      "name": "AWS Builder Loft",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-z4IPlkzqmEmT8fS",
+      "name": "HackerSquad",
+      "x": "hackersquadio",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-67N1cIZGGQcBAkh",
+      "name": "Founders Bay",
+      "x": "foundersbay",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-RG4kHW5XZVhM6qp",
+      "name": "Mariane Bekker",
+      "x": "Marianebekker",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-C6oF28E2X6I73GI",
+      "name": "StartX Team",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-u2PrMjQXFyRsr7o",
+      "name": "Ascent Valley",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-kpQUGVbfViXAj2x",
+      "name": "Aviral",
+      "x": "iaviralbhardwaj",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-KsfwHH3rTaHU9SP",
+      "name": "Adam Chan",
+      "x": "itsajchan",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-lFwjmgbRt6feefe",
+      "name": "Women in AI Club",
+      "x": "womeninaisf",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-covWRAIL7I8dAYG",
+      "name": "Sean Chiu",
+      "x": "seanchiuai",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ImCWer84kefTf4Q",
+      "name": "TatianaSF com",
+      "x": "TatianaSFcom",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-XduK9ESpHksYKW1",
+      "name": "tobi Oyebade",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-CPFhl1aS5H2QHxd",
+      "name": "Silicon Valley AI Hub",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-l7t5pOm3WW5vbke",
+      "name": "AICamp admin",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-jYLwpQemHiruoCW",
+      "name": "Talha Zahid",
+      "x": "TalhaZahids",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-7m9ds0gzsz4DeGj",
+      "name": "BuilderBase",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-E3DO0cozB1ceWEv",
+      "name": "WorkOS",
+      "x": "workos",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-qJHRgywAAgLokTX",
+      "name": "Bright Data",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-SlJpEjUKg2uZFbP",
+      "name": "Michael Liu",
+      "x": "mshliu",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-cxuHmkpfVMTWqgn",
+      "name": "Mike Morris",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-6JjEaejsAHXVIQU",
+      "name": "John Whaley",
+      "x": "joewhaley",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-WXF92ECtDkKDR6f",
+      "name": "tokens&",
+      "x": "tokensandai",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-qSsdgMpbRnNqoVG",
+      "name": "Alessandro Amenta",
+      "x": "ale_amenta",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-qbYiBhXUNsCG9cF",
+      "name": "sunday ajak",
+      "x": "sundayajak",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-sMz2vaL7SHxUMCH",
+      "name": "SHACK15",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-fKUpHQjgaSahWSr",
+      "name": "Beta University",
+      "x": "UofBeta",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-vugZWd0P8j8rexf",
+      "name": "Andrey K",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-NU61ECDQsUyQaRk",
+      "name": "Qualcomm",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-M1c1hU1DRUGGIMA",
+      "name": "Steven Echtman",
+      "x": "echtman",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-bb8fpQ5NldszdWG",
+      "name": "HealthTech Week",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Nbuvj3Egogb1CRP",
+      "name": "berkeley gateway accelerator",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-5FtaEeAxHWIkXLL",
+      "name": "Natalia Bielczyk, PhD",
+      "x": "natbielczyk",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VPOChxgUvsrEjSA",
+      "name": "South Park Commons",
+      "x": "spc",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-a4ZHpylBWpjQ1nq",
+      "name": "Patricia Liu",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-zbvH9V91BHsPNlJ",
+      "name": "TechEquity Ai",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-IirADtqflFueH2a",
+      "name": "Sheena Tu",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-AevWMiNxxsmZJ8J",
+      "name": "Mahan Soltanzadeh",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-jeF9q6KuOWU6ENF",
+      "name": "Heba Alazzeh",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VwaAr15yzdEx5VA",
+      "name": "Innovate Bay",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ZgJXThjCwH3pci5",
+      "name": "Boardy Boardman",
+      "x": "boardyai",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-JWlrNoSNzCawXOb",
+      "name": "Luis Villa",
+      "x": "thenoobyork",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-PZh9usoqas6fpdX",
+      "name": "Mind the Bridge",
+      "x": "MindTheBridge",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-BfAmZWBQf9Nhguz",
+      "name": "Neftalí Vélez",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VOrNt05AQ46D4V2",
+      "name": "Michael Grinich",
+      "x": "grinich",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VFDFYtXZOWYAe8M",
+      "name": "Darsh Singh Mann",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-fGhWi8vdR7u2rk7",
+      "name": "Kun Peng",
+      "x": "elkun_peng",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-l2ytAca3pW6qBCQ",
+      "name": "Tenki Cloud",
+      "x": "opencolin",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-p2010wPkOICVkMM",
+      "name": "YEP Accelerator",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-n7U6VlUhzjMahin",
+      "name": "Humanmade Information",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-3GGgxyPAOxTGZZX",
+      "name": "Michael Maximilien",
+      "x": "maximilien",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-9SHvHQVXmRQc9KD",
+      "name": "Yuqi Hou",
+      "x": "yuqih",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Yf7mGEzJxsuquuW",
+      "name": "Aaishika",
+      "x": "aaishika",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-nLgIc61VrNkYYsr",
+      "name": "Maximizing Potential",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Aq1bx7sdBKqiD76",
+      "name": "Daniel Niu",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-DBnAWoLttwkyOYi",
+      "name": "Berkeley Haas Entrepreneurship Program",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-E0Dn8IG8oAaHDPI",
+      "name": "Francesca Malayeri",
+      "x": "malayeriii",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-AkLV8kwGIkXO74k",
+      "name": "Jeanette Li",
+      "x": "jean_ette_li",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ymS5KCHjU6h8cVN",
+      "name": "Claire Xie",
+      "x": "claire_xiee",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-bUBC2nPv2FVXIKR",
+      "name": "Julian Alberts",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-qIaKyqyAZsc0UnO",
+      "name": "John Miller (Milbird.com)",
+      "x": "JYMiller_data",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-2UhyakU3sSogZEC",
+      "name": "Jessie Hsu",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Fiv4MggmFTjtALu",
+      "name": "Sam Karri",
+      "x": "samshanmukh",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Q11BXwQUzxDABfJ",
+      "name": "Kevin Mello",
+      "x": "nemulai_dev",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-sAc0iCgwZpbF2YW",
+      "name": "Ayush Ojha",
+      "x": "ojhaayush",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-loEHrFAyTzR0zfr",
+      "name": "Aria",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-2XatWtIGSGzm7ir",
+      "name": "Julius Olsson",
+      "x": "julius_o1sson",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-UU1RNIpRsEgDbpy",
+      "name": "Jing Kuang",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-7j2z0NMKPMA3LQq",
+      "name": "Mohammad Rasouli",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-5J7NblAtVDyuAB6",
+      "name": "MBC BioLabs",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-MJJuaqEG1B2e8IO",
+      "name": "Masters of Scale Summit",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-zxsNvul0yEuGRxj",
+      "name": "Plug and Play Tech Center",
+      "x": "PlugandPlayTC",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-mLh4XuFPcdVBp2D",
+      "name": "Salen Nhean",
+      "x": "salennhean",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-nCT9FKBjMdhPQZq",
+      "name": "Astrid Arias",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-k43EzVH5KLDNNy7",
+      "name": "Hustle Fund",
+      "x": "hustlefundvc",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-jcVepFGcpSWpnmf",
+      "name": "Matt Rappaport",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-pPFvvbZHUI5YEN9",
+      "name": "Sacha Ledan",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-r1hnLJdnjWwGPgK",
+      "name": "Angela Li",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-dipLru1vOVIUIFg",
+      "name": "Edward Chen",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-6sqwH2G0ljnGYBZ",
+      "name": "Yujian Tang",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-dPi3Uv7E2ETajqT",
+      "name": "Murray",
+      "x": "Murraynewlands",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-yBQS0FHsqm2jUco",
+      "name": "ODSC AI",
+      "x": "_odsc",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-eQLMGbPlzkgJQZv",
+      "name": "9Zero",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ecesxjfxDXFVTBb",
+      "name": "Modal Events",
+      "x": "modal",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-57CmJBYQHJCJFN5",
+      "name": "Eugene Malobrodsky",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-CsvEx8TEJ29H2M1",
+      "name": "Rhythm Gandhi",
+      "x": "rhythmkaurgand1",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ka2ON93JYCFAYdK",
+      "name": "Build with AI Club",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-RcXk3TznkK8qQWW",
+      "name": "Yvonne Newlands",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-pOudaff2KQJ3wwN",
+      "name": "Wendy Louise Wilder",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-I0qTFyFjMuzgmFn",
+      "name": "Laura Cruickshanks",
+      "x": "mslauraliu",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-p75WuWJBcKDTeP8",
+      "name": "Ishaan Sehgal",
+      "x": "ishaansehgal",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-xDm8aOEsBWOVbX2",
+      "name": "Xavier Huang",
+      "x": "lingcodebaby",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-PMTZlq6tPHY7pCF",
+      "name": "The Swedish-American Chamber of Commerce SF & Silicon Valley",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-cgGt8TEPzWxglwx",
+      "name": "Tom Charman",
+      "x": "charmantom",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-24rosSxUwZ4NB4v",
+      "name": "Bobby Glasco",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-FO8zquqNb0neEzD",
+      "name": "Dom Kennedy",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-vkXc86HAJNJOfwG",
+      "name": "Anna Hong",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-MxFkE51vfJR17zv",
+      "name": "Lenka Huang",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ickgczBlzhrzvXQ",
+      "name": "Daytona",
+      "x": "CipcicMarijan",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-io5rHkeAo7WS8zH",
+      "name": "Aditi Jhanwar",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ktYLPzRHiav5LeD",
+      "name": "Omar Bawa",
+      "x": "OmarBawa4",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-RLdGv5ZZ1h6AWDM",
+      "name": "Nicole Gong",
+      "x": "nicoleegong",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-3ObkBqot9cqNaMS",
+      "name": "TestMu AI",
+      "x": "testmuai",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-7fdjacAieoqp85p",
+      "name": "Erika Lee",
+      "x": "erikalee",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ZCP3V2s0DPS7lkC",
+      "name": "Synexis",
+      "x": "synexisdotio",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-NhYxUCaYdW9MN8g",
+      "name": "ops",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-BlzRPW47B9Yf200",
+      "name": "Tamilselvi Ramasamy",
+      "x": "tamil_2399",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-l9hPjYpKRMoDZcA",
+      "name": "GitHub",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-5YTYVQB3r7xZ9bI",
+      "name": "Daniel Aydin",
+      "x": "daniel_legaldev",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-5o6GRAbi0gVxaKO",
+      "name": "roland graser",
+      "x": "roland_graser",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-BNogA1rzu1qUN6e",
+      "name": "Stripe Startups",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-xlYZDsmqSfOKEwV",
+      "name": "Rameen Rauf",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-77HKTkgZ2IeNMo7",
+      "name": "Rida Asif",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-mIYfExlD88BgZcC",
+      "name": "Sahar Haidari",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ljDjGMtI0exR85u",
+      "name": "Silicon Valley Career Development & Experiential Learning",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-JAuJB2V5ZeBkJH3",
+      "name": "Catalyst Bay",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-4LvplYThM2k5yhK",
+      "name": "Nick Bilogorskiy",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Q0DpNG1baOGfDzk",
+      "name": "Nazar Gulyk",
+      "x": "neffko",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-tZ2VRUP4EQgHBIs",
+      "name": "Dmytro Spodarets",
+      "x": "d_spodarets",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-C92hIBTiTuOFCSG",
+      "name": "Valeria Chobotok",
+      "x": "valeriachobotok",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-dszIjBAwu0atjuD",
+      "name": "Bryan",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-9hhoSRhNm6BKXGk",
+      "name": "Sam Arnold",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-BA8xtEmrnB26Ylp",
+      "name": "Shreman Shrestha",
+      "x": "theshre",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-3QUv8PoLsvU119V",
+      "name": "Victoria Alfimova",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-PUAdYJcBATOMzr4",
+      "name": "Vanta",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-gKtQMU8qJlKwgYU",
+      "name": "Keycard",
+      "x": "KeycardAI",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-zvyUmqaKAFquO4c",
+      "name": "Herman Errico",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ytC0nPyKjjnpFqE",
+      "name": "Allie Howe",
+      "x": "vtahowe",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-vSyukfn6ObdtM2n",
+      "name": "Akriti Vora",
+      "x": "akritivora",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-aFhDwJ2V6Fgell4",
+      "name": "Red Heron",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-FkIPCruogw2XAJv",
+      "name": "Capri Wheaton",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-owOfiEDXzYVdJYq",
+      "name": "Harshal",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-VAxT05t1kUdtRFl",
+      "name": "Angelo",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-dP92AgoJdSfrItA",
+      "name": "Ruth Robinson",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-XhnYcTm4o45oaDz",
+      "name": "kanika gupta",
+      "x": "kxg5522",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Gii7eJDNHUs6v7I",
+      "name": "Steve Ancheta",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-4VASfbrQc85SYPD",
+      "name": "Zara",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-Jk6OAeS5XqwgoR3",
+      "name": "Jacopo Piazza",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-kOCtAv0ofrdxahQ",
+      "name": "Marlene Ronstedt",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-RD8s1RCq5S6UMBG",
+      "name": "",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-EU5zW88o9tcx1GA",
+      "name": "Khalil Kaddoura",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-ROA8C1sapyeCugO",
+      "name": "Krishi Jaladi",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-L9PnPGEILisXbUE",
+      "name": "Michelle Wang",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-QMLBvjjLnJi6bJE",
+      "name": "Aakash Suresh",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-9LBjreJIbxu3Lcq",
+      "name": "Aryan Shah",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-y41TnN9V23wY5xP",
+      "name": "Andrew Boyd",
+      "x": "andyboyd1806",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-6AVTjrVNnefpCPd",
+      "name": "Troy Kanji",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-DkqZjVErBDA7KRE",
+      "name": "Justin S. Iredale",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-8GZbtpswQgPulpJ",
+      "name": "Erick Garcia",
+      "x": "realerickg1",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-CbBz3bgOAccp6dd",
+      "name": "Rajoshi Ghosh",
+      "x": "rajoshighosh",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-vK1I1RVragAYKxX",
+      "name": "Zack Alspaugh",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-8ou2G71D6rz0GrP",
+      "name": "Anushrut Gupta",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-8oCGsiROTFbvqr4",
+      "name": "Vasyl Dub",
+      "x": null,
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    },
+    {
+      "id": "usr-xrfVloCDZMc6QyG",
+      "name": "Pete Kane",
+      "x": "pwekane",
+      "lastRelevantAt": "2026-10-20T06:34:48.796Z"
+    }
+  ]
+}

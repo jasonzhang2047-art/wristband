@@ -1,0 +1,49 @@
+name: crawl
+
+# Crawls every 6 hours and deploys the site to GitHub Pages.
+# State (first-seen history, followed calendars and hosts) is carried between runs through the deployed site
+# itself (events.json, learned.json), so the crawler never commits to the repo. A push to main — e.g. the
+# twice-daily web sweep updating data/curated.json — triggers a fresh crawl right away.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Restore last crawl from the live site
+        run: |
+          base="${{ steps.pages.outputs.base_url }}"
+          curl -fsSL "$base/events.json" -o /tmp/events.json && mv /tmp/events.json site/events.json || echo "No live events.json yet; starting from the repo copy"
+          curl -fsSL "$base/learned.json" -o /tmp/learned.json && mv /tmp/learned.json data/learned.json || echo "No live learned.json yet; starting from the repo copy"
+      - name: Crawl
+        run: node crawler/crawl.mjs
+      - name: Build static site
+        run: node crawler/build-static.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

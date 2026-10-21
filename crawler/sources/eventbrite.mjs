@@ -15,6 +15,7 @@ const SEARCHES = [
 
 export async function crawlEventbrite() {
   const items = new Map();
+  const errors = [];
   for (const s of SEARCHES) {
     try {
       const html = await getText(`https://www.eventbrite.com/d/${s}/`, { retries: 0 });
@@ -24,9 +25,14 @@ export async function crawlEventbrite() {
           if (it?.url) items.set(it.url.split('?')[0], it);
         }
       }
-    } catch {}
+    } catch (e) {
+      errors.push(e.message);
+    }
     await sleep(500);
   }
+  // Eventbrite serves a bot check instead of results to some networks (e.g. cloud CI). Report that as a failure
+  // so the crawler keeps the last good Eventbrite events instead of treating them as removed.
+  if (!items.size) throw new Error(errors[0] || 'no results on any search page (likely blocked)');
   const events = [];
   for (const [url, it] of items) {
     const loc = it.location || {};

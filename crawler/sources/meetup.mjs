@@ -11,6 +11,7 @@ const SEARCHES = [
 
 export async function crawlMeetup() {
   const found = new Map();
+  const errors = [];
   for (const [kw, loc] of SEARCHES) {
     try {
       const html = await getText(
@@ -26,9 +27,12 @@ export async function crawlMeetup() {
         const group = v.group?.__ref ? ap[v.group.__ref] : v.group;
         found.set(v.id, { v, venue, group });
       }
-    } catch {}
+    } catch (e) {
+      errors.push(e.message);
+    }
     await sleep(600);
   }
+  if (!found.size) throw new Error(errors[0] || 'no results on any search page (likely blocked)');
   const events = [];
   for (const { v, venue, group } of found.values()) {
     if (v.isOnline || v.eventType === 'ONLINE') continue;

@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-21T01:05:00-07:00",
+  "sweptAt": "2026-10-21T13:10:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -120,7 +120,24 @@
       "body": "Open to college students worldwide. Travel, meals and lodging are covered for accepted hackers.",
       "url": "https://treehacks.com/",
       "org": "Stanford"
+    },
+    {
+      "kind": "event",
+      "url": "https://luma.com/45k58tq4",
+      "foundVia": "Falcon Hacks site (via Hack Club Bay Area list)",
+      "sourceUrl": "https://falconhacks2026.com"
+    },
+    {
+      "kind": "program",
+      "name": "South Park Commons Founder Fellowship — Spring 2027",
+      "org": "South Park Commons",
+      "url": "https://www.southparkcommons.com/apply",
+      "status": "soon",
+      "deadline": null,
+      "opens": null,
+      "note": "Fall 2026 applications are closed. SPC says Spring 2027 applications open later this year; no date given.",
+      "sourceUrl": "https://www.southparkcommons.com/apply"
     }
   ],
-  "sweepCursor": 16
+  "sweepCursor": 24
 }

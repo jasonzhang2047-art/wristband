@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-22T01:05:00-07:00",
+  "sweptAt": "2026-10-22T12:54:38-07:00",
   "items": [
     {
       "kind": "event",
@@ -148,7 +148,26 @@
       "opens": null,
       "note": "One-week program, mostly virtual, ending with an in-person day in San Francisco or New York. Applications reviewed on a rolling basis with no deadline. Optional $10,000 investment at a $1B cap.",
       "sourceUrl": "https://www.zfellows.com/"
+    },
+    {
+      "kind": "program",
+      "name": "PearX — W27",
+      "org": "Pear VC",
+      "url": "https://pear.vc/pearx-application/",
+      "status": "rolling",
+      "deadline": null,
+      "opens": null,
+      "note": "Regular applications for W27 closed Oct 4; applications submitted after that are reviewed on a rolling basis. Pear has offices in San Francisco and Menlo Park.",
+      "sourceUrl": "https://pear.vc/pearx-application/"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-17",
+      "title": "Cerebral Valley and Crusoe ran The Recursive Agents Hackathon in San Francisco",
+      "body": "A one-day, in-person hackathon held during PyTorch Conference week, with $25,000 in cash and an NVIDIA RTX 5090 as prizes. Winners were not posted on the event page.",
+      "url": "https://cerebralvalley.ai/e/crusoe-recursive-agents-hackathon",
+      "org": "Cerebral Valley"
     }
   ],
-  "sweepCursor": 32
+  "sweepCursor": 0
 }

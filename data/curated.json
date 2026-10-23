@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-23T00:54:50-07:00",
+  "sweptAt": "2026-10-23T13:05:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -175,7 +175,15 @@
       "body": "A two-day on-device AI hackathon on Oct 17–18 with Qualcomm, Meta, GitHub and the PyTorch Foundation during Open Source AI Week. Top team per track received Meta AI glasses and an Arduino UNO Q; winners were not posted on the event page.",
       "url": "https://luma.com/executorch-hackathon",
       "org": "HackerSquad"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-20",
+      "title": "Granola and Anthropic ran a GTM & Marketing Hackathon in San Francisco",
+      "body": "An evening hackathon at Granola SF for non-technical GTM and marketing operators, who built with Claude and Granola context over MCP and demoed to judges. Winners were not posted on the event page.",
+      "url": "https://luma.com/granola-gtm-hackathon",
+      "org": "Granola"
     }
   ],
-  "sweepCursor": 8
+  "sweepCursor": 16
 }

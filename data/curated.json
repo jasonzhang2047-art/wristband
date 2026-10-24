@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-23T13:05:00-07:00",
+  "sweptAt": "2026-10-24T00:56:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -183,7 +183,24 @@
       "body": "An evening hackathon at Granola SF for non-technical GTM and marketing operators, who built with Claude and Granola context over MCP and demoed to judges. Winners were not posted on the event page.",
       "url": "https://luma.com/granola-gtm-hackathon",
       "org": "Granola"
+    },
+    {
+      "kind": "event",
+      "url": "https://luma.com/jvcxz1he",
+      "foundVia": "Cerebral Valley events page",
+      "sourceUrl": "https://cerebralvalley.ai/events"
+    },
+    {
+      "kind": "program",
+      "name": "Entrepreneur First — San Francisco residencies",
+      "org": "Entrepreneur First",
+      "url": "https://apply.joinef.com/",
+      "status": "rolling",
+      "deadline": null,
+      "opens": null,
+      "note": "EF says it accepts applications for its U.S. funding and fellowships and San Francisco residencies on a rolling basis. Its Bridge Residency in SF (Winter 2027, 8 weeks for young Europeans) starts February 2027.",
+      "sourceUrl": "https://apply.joinef.com/"
     }
   ],
-  "sweepCursor": 16
+  "sweepCursor": 24
 }

@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-25T01:05:00-07:00",
+  "sweptAt": "2026-10-25T13:05:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -243,7 +243,18 @@
       "body": "The one-day hackathon took place Oct 23 at the Silicon Valley AI Hub in Menlo Park. Winners were not yet posted on the event page.",
       "url": "https://cerebralvalley.ai/e/intelligence-at-work-hackathon",
       "org": "Snowflake, Anthropic"
+    },
+    {
+      "kind": "program",
+      "name": "AI Grant — Batch 4",
+      "org": "AI Grant",
+      "url": "https://aigrant.com/",
+      "status": "closed",
+      "deadline": null,
+      "opens": null,
+      "note": "Applications for Batch 4 are closed; no date given for the next batch. $250k investment on an uncapped SAFE for pre-seed and seed AI companies. The Summit and Demo Day are in San Francisco.",
+      "sourceUrl": "https://aigrant.com/"
     }
   ],
-  "sweepCursor": 0
+  "sweepCursor": 8
 }

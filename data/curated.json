@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-25T13:05:00-07:00",
+  "sweptAt": "2026-10-26T01:10:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -254,7 +254,25 @@
       "opens": null,
       "note": "Applications for Batch 4 are closed; no date given for the next batch. $250k investment on an uncapped SAFE for pre-seed and seed AI companies. The Summit and Demo Day are in San Francisco.",
       "sourceUrl": "https://aigrant.com/"
+    },
+    {
+      "kind": "event",
+      "title": "now[dev]26 Hackathon",
+      "url": "https://www.servicenow.com/community/now-dev-26-hackathon/ct-p/creatorcon-hackathon",
+      "start": "2026-11-04T12:00:00-08:00",
+      "end": "2026-11-04T20:00:00-08:00",
+      "city": "San Jose",
+      "venue": "San Jose Convention Center",
+      "organizer": "ServiceNow",
+      "type": "hackathon",
+      "note": "One-day hackathon at ServiceNow's now[dev]26 conference. Teams of 3 to 6, no solo entries. Builds must use hackathon-provided instances. Winners announced at the Nov 5 keynote; prize details not yet final.",
+      "access": {
+        "kind": "ticket",
+        "labelOverride": "now[dev]26 registration required"
+      },
+      "foundVia": "ServiceNow now[dev] blog",
+      "sourceUrl": "https://www.servicenow.com/community/now-dev-26-hackathon/ct-p/creatorcon-hackathon"
     }
   ],
-  "sweepCursor": 8
+  "sweepCursor": 16
 }

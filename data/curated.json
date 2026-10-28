@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-10-27T19:05:00-07:00",
+  "sweptAt": "2026-10-28T07:05:00-07:00",
   "items": [
     {
       "kind": "event",
@@ -290,5 +290,5 @@
       "org": "Cal Hacks"
     }
   ],
-  "sweepCursor": 0
+  "sweepCursor": 8
 }

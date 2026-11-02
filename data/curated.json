@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-01T07:55:40-07:00",
+  "sweptAt": "2026-11-01T19:10:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -288,7 +288,15 @@
       "body": "The three-day student hackathon listed $100,000 in prizes. Winners have not been posted on the event site yet.",
       "url": "https://calhacks.io/",
       "org": "Cal Hacks"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-30",
+      "title": "Viam and MongoDB ran a Robot Hackathon on physical AI in San Francisco",
+      "body": "Teams built physical AI applications on real robot arms using Viam for robot software and MongoDB Atlas for robot data, at the Robotics Center of Silicon Valley on Oct 29–30.",
+      "url": "https://luma.com/ta40197s",
+      "org": "Viam · MongoDB"
     }
   ],
-  "sweepCursor": 32
+  "sweepCursor": 0
 }

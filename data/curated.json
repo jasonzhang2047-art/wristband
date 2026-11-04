@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-04T00:55:56-08:00",
+  "sweptAt": "2026-11-04T13:10:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -325,7 +325,15 @@
       "opens": null,
       "note": "Apply with what you are building for a chance at an invite to the Fort Mason campus in San Francisco and a first check. Founders, Inc. says it replies within a month; no deadline is given.",
       "sourceUrl": "https://f.inc/"
+    },
+    {
+      "kind": "news",
+      "date": "2026-10-31",
+      "title": "YC ran Haunted Hacks: Real-Time AI Edition in San Francisco",
+      "body": "Y Combinator hosted a one-day Halloween hackathon on Oct 31 with tracks for stateful apps built on Terse Durable Actors and agent-to-agent communication with Agent Relay. The best overall project was promised a guaranteed YC interview.",
+      "url": "https://events.ycombinator.com/haunted-hacks-2026",
+      "org": "Y Combinator"
     }
   ],
-  "sweepCursor": 32
+  "sweepCursor": 0
 }

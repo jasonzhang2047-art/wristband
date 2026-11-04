@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-03T12:56:56-08:00",
+  "sweptAt": "2026-11-04T00:55:56-08:00",
   "items": [
     {
       "kind": "event",
@@ -63,7 +63,7 @@
       "url": "https://www.ycombinator.com/apply",
       "status": "rolling",
       "deadline": null,
-      "note": "On-time deadline passed Nov 2 at 8pm PT; YC is still accepting late applications but can't promise a decision date. Batch runs January–March in San Francisco.",
+      "note": "On-time deadline passed Nov 2 at 8pm PT; YC still considers late applications but cannot promise when it will reply. On-time applicants hear back by Dec 11. Batch runs January–March in San Francisco.",
       "sourceUrl": "https://www.ycombinator.com/apply"
     },
     {
@@ -327,5 +327,5 @@
       "sourceUrl": "https://f.inc/"
     }
   ],
-  "sweepCursor": 24
+  "sweepCursor": 32
 }

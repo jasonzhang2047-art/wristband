@@ -1,32 +1,7 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-08T00:55:18-08:00",
+  "sweptAt": "2026-11-08T12:55:36-08:00",
   "items": [
-    {
-      "kind": "event",
-      "title": "Make Something Agents Want",
-      "url": "https://events.ycombinator.com/MakeSomethingAgentsWant",
-      "start": "2026-10-17T16:00:00.000Z",
-      "end": "2026-10-18T20:30:00.000Z",
-      "city": "San Francisco",
-      "venue": "Y Combinator, San Francisco",
-      "organizer": "Y Combinator",
-      "hosts": [
-        {
-          "name": "Y Combinator",
-          "x": "ycombinator"
-        }
-      ],
-      "type": "hackathon",
-      "image": "https://d2xtzufx9mvgbo.cloudfront.net/events/Make-agents_want_1920x1080-6d85104bee460773.png",
-      "note": "Two-day hackathon at YC's SF office on building for agents as the user: agent experience, headless MCPs, docs written for agents. 225 spots.",
-      "access": {
-        "kind": "closed",
-        "labelOverride": "Applications closed Oct 16"
-      },
-      "sourceUrl": "https://events.ycombinator.com/MakeSomethingAgentsWant",
-      "foundVia": "YC event page"
-    },
     {
       "kind": "event",
       "title": "TreeHacks 2027",
@@ -365,7 +340,13 @@
       },
       "foundVia": "Epic Developer Community forum post, Nov 1",
       "sourceUrl": "https://forums.unrealengine.com/t/san-francisco-in-person-sign-ups-are-open-for-epic-ai-megajam/2848535"
+    },
+    {
+      "kind": "event",
+      "url": "https://luma.com/chgfm6ec",
+      "foundVia": "Web search (Luma, VexoHacks at Y Combinator)",
+      "sourceUrl": "https://luma.com/chgfm6ec"
     }
   ],
-  "sweepCursor": 16
+  "sweepCursor": 24
 }

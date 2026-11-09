@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-09T00:56:35-08:00",
+  "sweptAt": "2026-11-09T13:05:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -364,7 +364,13 @@
       },
       "foundVia": "Web search for Harrison Chase / LangChain events",
       "sourceUrl": "https://www.langchain.com/own-your-intelligence-exploratorium"
+    },
+    {
+      "kind": "event",
+      "url": "https://luma.com/sf-2pgv",
+      "foundVia": "Bond community hackathon list",
+      "sourceUrl": "https://bondcommunity.ai/hackathons"
     }
   ],
-  "sweepCursor": 32
+  "sweepCursor": 0
 }

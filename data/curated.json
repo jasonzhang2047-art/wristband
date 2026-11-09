@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-08T12:55:36-08:00",
+  "sweptAt": "2026-11-09T00:56:35-08:00",
   "items": [
     {
       "kind": "event",
@@ -346,7 +346,25 @@
       "url": "https://luma.com/chgfm6ec",
       "foundVia": "Web search (Luma, VexoHacks at Y Combinator)",
       "sourceUrl": "https://luma.com/chgfm6ec"
+    },
+    {
+      "kind": "event",
+      "title": "Own Your Intelligence",
+      "url": "https://www.langchain.com/own-your-intelligence-exploratorium",
+      "start": "2026-12-08T18:00:00-08:00",
+      "end": "2026-12-08T21:00:00-08:00",
+      "city": "San Francisco",
+      "venue": "Fisher Bay Observatory Gallery and Terrace, Exploratorium, Pier 15",
+      "organizer": "LangChain",
+      "type": "builder",
+      "note": "Free evening event hosted by LangChain with Harrison Chase speaking; more speakers to be announced. Space is limited and registrations are approved by LangChain.",
+      "access": {
+        "kind": "apply",
+        "labelOverride": "Request a spot"
+      },
+      "foundVia": "Web search for Harrison Chase / LangChain events",
+      "sourceUrl": "https://www.langchain.com/own-your-intelligence-exploratorium"
     }
   ],
-  "sweepCursor": 24
+  "sweepCursor": 32
 }

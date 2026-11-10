@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-10T01:05:00-08:00",
+  "sweptAt": "2026-11-10T13:20:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -370,7 +370,26 @@
       "url": "https://luma.com/sf-2pgv",
       "foundVia": "Bond community hackathon list",
       "sourceUrl": "https://bondcommunity.ai/hackathons"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-08",
+      "title": "Neo ran its second annual Neo Hackathon in San Francisco",
+      "body": "An invite-only hackathon for Neo-invited teams of 2 to 4 on Nov 6–8, with 46 participants and judges from Anthropic and OpenAI. Winning projects are marked in the Devpost gallery, including a steerable weather balloon and a sword-fighting robot.",
+      "url": "https://neo-hackathon-2026.devpost.com/",
+      "org": "Neo"
+    },
+    {
+      "kind": "program",
+      "name": "Conviction Embed — 7th cohort",
+      "org": "Conviction",
+      "url": "https://embed.conviction.com/",
+      "status": "open",
+      "deadline": null,
+      "opens": null,
+      "note": "Conviction says applications are open for the 7th cohort of Embed, its program for early AI-native founding teams, with rolling admissions. $250K investment on an uncapped MFN SAFE plus compute credits; includes an in-person retreat in San Francisco. No deadline given.",
+      "sourceUrl": "https://embed.conviction.com/"
     }
   ],
-  "sweepCursor": 8
+  "sweepCursor": 16
 }

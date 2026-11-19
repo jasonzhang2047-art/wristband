@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-18T18:55:00-08:00",
+  "sweptAt": "2026-11-19T07:05:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -408,7 +408,15 @@
       "body": "HBSA and UC Berkeley SCET hosted a Claude build session with Anthropic on November 13 in Berkeley.",
       "url": "https://luma.com/mays98bp",
       "org": "HBSA / SCET / Anthropic"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-15",
+      "title": "Immerse the Bay 2026 XR hackathon wrapped at Stanford",
+      "body": "The Nov 13–15 XR hackathon at Stanford listed $5,800+ in cash prizes plus hardware and credits from Visko and ManageXR. Winning projects are marked in the Devpost gallery, including Moonbase Managed, Cloudbound and Story Bricks.",
+      "url": "https://immerse-the-bay-2026.devpost.com/project-gallery",
+      "org": "Immerse the Bay · Stanford"
     }
   ],
-  "sweepCursor": 24
+  "sweepCursor": 32
 }

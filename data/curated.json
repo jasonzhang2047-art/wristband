@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-18T06:56:00-08:00",
+  "sweptAt": "2026-11-18T18:55:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -61,22 +61,6 @@
       "deadline": null,
       "note": "Event Feb 12–14, 2027 at Stanford. Travel, meals and lodging covered for accepted hackers.",
       "sourceUrl": "https://treehacks.com/"
-    },
-    {
-      "kind": "news",
-      "date": "2026-10-19",
-      "title": "YC Winter 2027 applications close Nov 2",
-      "body": "On-time applicants hear back by Dec 11. Spring, Summer and Fall 2027 early-decision applications are open too.",
-      "url": "https://www.ycombinator.com/apply",
-      "org": "Y Combinator"
-    },
-    {
-      "kind": "news",
-      "date": "2026-10-19",
-      "title": "TreeHacks 2027 is taking applications for Feb 12–14 at Stanford",
-      "body": "Open to college students worldwide. Travel, meals and lodging are covered for accepted hackers.",
-      "url": "https://treehacks.com/",
-      "org": "Stanford"
     },
     {
       "kind": "event",
@@ -426,5 +410,5 @@
       "org": "HBSA / SCET / Anthropic"
     }
   ],
-  "sweepCursor": 16
+  "sweepCursor": 24
 }

@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-19T07:05:00-08:00",
+  "sweptAt": "2026-11-19T19:05:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -100,14 +100,6 @@
       "opens": null,
       "note": "Regular applications for W27 closed Oct 4; applications submitted after that are reviewed on a rolling basis. Pear has offices in San Francisco and Menlo Park.",
       "sourceUrl": "https://pear.vc/pearx-application/"
-    },
-    {
-      "kind": "news",
-      "date": "2026-10-20",
-      "title": "Granola and Anthropic ran a GTM & Marketing Hackathon in San Francisco",
-      "body": "An evening hackathon at Granola SF for non-technical GTM and marketing operators, who built with Claude and Granola context over MCP and demoed to judges. Winners were not posted on the event page.",
-      "url": "https://luma.com/granola-gtm-hackathon",
-      "org": "Granola"
     },
     {
       "kind": "event",
@@ -418,5 +410,5 @@
       "org": "Immerse the Bay · Stanford"
     }
   ],
-  "sweepCursor": 32
+  "sweepCursor": 0
 }

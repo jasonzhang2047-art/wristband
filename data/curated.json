@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-24T00:56:05-08:00",
+  "sweptAt": "2026-11-24T12:56:12-08:00",
   "items": [
     {
       "kind": "event",
@@ -38,7 +38,7 @@
       "url": "https://speedrun.a16z.com/apply",
       "status": "rolling",
       "deadline": null,
-      "note": "Applications open for SR008, which runs February 1 to April 16, 2027 in San Francisco. Up to $1M first check.",
+      "note": "SR008 runs February 1 to April 16, 2027 in San Francisco. a16z says applications sent after November 1 are considered for the following residency; it reviews applications year-round. Up to $1M investment.",
       "sourceUrl": "https://speedrun.a16z.com/apply"
     },
     {
@@ -445,7 +445,21 @@
       },
       "foundVia": "Web search (Anthropic hackathon San Francisco December 2026)",
       "sourceUrl": "https://cerebralvalley.ai/e/parallax-sf-hackathon"
+    },
+    {
+      "kind": "event",
+      "url": "https://luma.com/mt2",
+      "foundVia": "Cerebral Valley events page",
+      "sourceUrl": "https://cerebralvalley.ai/events"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-22",
+      "title": "X Square Robot ran an Embodied AI Hackathon in San Francisco",
+      "body": "Solo builders and teams of up to three built on real robots on Nov 21–22, with an awards ceremony on Nov 22. Listed prizes were $5,000, $3,000 and $1,000, plus a $200 stipend for each qualified participant; winners were not posted on the event page.",
+      "url": "https://luma.com/21palhfw",
+      "org": "X Square Robot"
     }
   ],
-  "sweepCursor": 8
+  "sweepCursor": 16
 }

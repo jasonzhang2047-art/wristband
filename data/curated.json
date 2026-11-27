@@ -1,6 +1,6 @@
 {
   "_note": "Written by the scheduled web & social sweep (and by hand). Every item needs a sourceUrl that was opened and checked. kinds: event (needs title+start+url, or just a Luma url), program (application windows), news (recaps, announcements), override (corrects a crawled event by id).",
-  "sweptAt": "2026-11-27T00:55:00-08:00",
+  "sweptAt": "2026-11-27T13:05:00-08:00",
   "items": [
     {
       "kind": "event",
@@ -406,7 +406,31 @@
       "body": "A one-day hackathon on building personal agents that work outside chat apps, judged by engineers from Meta, Cursor, Intuit and Amplitude.",
       "url": "https://luma.com/personalagenthack",
       "org": "tokens&"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-24",
+      "title": "Pangram, Kino, Capy and Paper ran the SF Non-Slop Hackathon",
+      "body": "A one-day, in-person hackathon on Nov 24 asking builders to use AI to make something intentional, with $1,000 cash prizes from each of the four sponsors. Registration required host approval.",
+      "url": "https://luma.com/32d8mqid",
+      "org": "Pangram · Kino · Capy · Paper"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-23",
+      "title": "Multiplayer AI Hackathon at AWS Builder Loft in San Francisco",
+      "body": "A Thanksgiving-week hackathon on Nov 23 for building AI agents that act like characters, interacting with each other and with people in worlds the teams create.",
+      "url": "https://luma.com/finch-jd7i",
+      "org": "Finch.AI · Crewbase Collective"
+    },
+    {
+      "kind": "news",
+      "date": "2026-11-20",
+      "title": "Willow, Emergent and You.com ran Speech to Ship in San Francisco",
+      "body": "A one-day hackathon at Emergent HQ on Nov 20 where builders drew a random city, business and customer, then built an app by voice. Winners shared $5K in credits plus hardware prizes.",
+      "url": "https://luma.com/1netrne6",
+      "org": "Willow · Emergent · You.com"
     }
   ],
-  "sweepCursor": 16
+  "sweepCursor": 24
 }
